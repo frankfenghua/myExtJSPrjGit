@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+	<row id="0" name="Ext.chart.Tip" javaclass="Behavior Standard Component" project="Coriolis" inactive="false" comments="" module="" repository="com.coriolis">
+		<listeners/>
+		<clientMethods/>
+		<configs>
+			<config behaviorxml_id="0" id="0" name="id" inactive="false" comments="" module="" repository="com.coriolis">
+				<configScript>
+					<![CDATA[<% return "'" + coriolis.getActiveObject().getUniqueID() + "'";%>]]>
+				</configScript>
+			</config>
+			<config behaviorxml_id="0" id="1" name="UIComponentName" inactive="false" comments="" module="" repository="com.coriolis">
+				<configScript>
+					<![CDATA[<% return "'" + coriolis.getCurrentComponent().getName() + "'";%>]]>
+				</configScript>
+			</config>
+		</configs>
+	</row>
+	<row id="1" name="Ext.chart.axis.Abstract" javaclass="Behavior Standard Component" project="Coriolis" inactive="false" comments="" module="" repository="com.coriolis">
+		<listeners/>
+		<clientMethods/>
+		<configs>
+			<config behaviorxml_id="1" id="0" name="id" inactive="false" comments="" module="" repository="com.coriolis">
+				<configScript>
+					<![CDATA[<% return "'" + coriolis.getActiveObject().getUniqueID() + "'";%>]]>
+				</configScript>
+			</config>
+			<config behaviorxml_id="1" id="1" name="UIComponentName" inactive="false" comments="" module="" repository="com.coriolis">
+				<configScript>
+					<![CDATA[<% return "'" + coriolis.getCurrentComponent().getName() + "'";%>]]>
+				</configScript>
+			</config>
+		</configs>
+	</row>
+</dataset>
