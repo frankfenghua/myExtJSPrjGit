@@ -1,2 +1,2 @@
 REM mklink /D d:\OpenSourcePrj\OsJavascript\myExtJSPrj\UITestBed\ext "d:\OpenSourcePrj\OsJavascript\extjs-4.0.7\"
-mklink /D d:\OpenSourcePrj\OsJavascript\myExtJSPrj\UITestBed\ext "d:\OpenSourcePrj\OsJavascript\extjs\ext-4.0.7-gpl\"
+mklink /D d:\OpenSourcePrj\OsJavascript\myExtJSPrjGit\UITestBed\ext "d:\OpenSourcePrj\OsJavascript\extjs\ext-4.0.7-gpl\"
