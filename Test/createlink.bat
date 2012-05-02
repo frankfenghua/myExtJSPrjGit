@@ -1,1 +1,1 @@
-mklink /D d:\OpenSourcePrj\OsJavascript\myExtJSPrj\Test\ext "d:\OpenSourcePrj\OsJavascript\extjs-4.0.7\"
+mklink /D d:\OpenSourcePrj\OsJavascript\myExtJSPrjGit\Test\ext "d:\OpenSourcePrj\OsJavascript\extjs-4.0.7\"
