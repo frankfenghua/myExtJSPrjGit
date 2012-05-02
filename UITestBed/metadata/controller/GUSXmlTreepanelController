@@ -1,0 +1,70 @@
+{
+    "id": "ExtBox1-ext-gen135403",
+    "type": "controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "GUSXmlTreepanelController"
+    },
+    "customConfigs": [],
+    "designerId": "52d51a97-d82d-4cab-9be8-4a82fe0956a3",
+    "$viewOrder": 3,
+    "expanded": false,
+    "cn": [
+        {
+            "id": "ExtBox1-ext-gen135624",
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onTreepanelSelectionChange",
+                "implHandler": "this.getUserGridPanel().down('#bottom').update(selections[0].data); ",
+                "name": "selectionchange",
+                "scope": "me",
+                "designer|targetType": "Ext.tree.Panel",
+                "designer|controlQuery": "treepanel",
+                "designer|userClassName": "onTreepanelSelectionChange"
+            },
+            "customConfigs": [],
+            "expanded": true
+        },
+        {
+            "id": "ExtBox1-ext-gen135877",
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "GUSXmlTreePanel",
+                "selector": "#gusxmltreepanel",
+                "designer|userClassName": "GUSXmlTreePanel"
+            },
+            "customConfigs": [],
+            "expanded": true
+        },
+        {
+            "id": "ExtBox1-ext-gen136466",
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "UserGridPanel",
+                "selector": "#usergridpanel",
+                "designer|userClassName": "UserGridPanel"
+            },
+            "customConfigs": [],
+            "expanded": true
+        }
+    ]
+}

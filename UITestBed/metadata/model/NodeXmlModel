@@ -1,0 +1,82 @@
+{
+    "id": "ExtBox1-ext-gen127864",
+    "type": "datamodel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "NodeXmlModel"
+    },
+    "customConfigs": [],
+    "designerId": "e40ad9b1-bdd4-4c42-9ec7-7a1fc9259907",
+    "$viewOrder": 4,
+    "expanded": false,
+    "cn": [
+        {
+            "id": "ExtBox1-ext-gen128061",
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "text",
+                "type": "string",
+                "designer|userClassName": "MyField10"
+            },
+            "customConfigs": [],
+            "expanded": true
+        },
+        {
+            "id": "ExtBox1-ext-gen128233",
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "id",
+                "type": "string",
+                "designer|userClassName": "MyField11"
+            },
+            "customConfigs": [],
+            "expanded": true
+        },
+        {
+            "id": "ExtBox1-ext-gen128406",
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "cls",
+                "type": "string",
+                "designer|userClassName": "MyField12"
+            },
+            "customConfigs": [],
+            "expanded": true
+        },
+        {
+            "id": "ExtBox1-ext-gen128583",
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "leaf",
+                "type": "string",
+                "designer|userClassName": "MyField13"
+            },
+            "customConfigs": [],
+            "expanded": true
+        }
+    ]
+}

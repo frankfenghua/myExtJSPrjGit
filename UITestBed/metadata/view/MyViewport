@@ -1,0 +1,94 @@
+{
+    "id": "ExtBox1-ext-gen8424",
+    "type": "viewport",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|initialView": true,
+        "autoScroll": false,
+        "layout": "border",
+        "designer|userClassName": "MyViewport"
+    },
+    "customConfigs": [],
+    "designerId": "14d0f432-21df-435b-ad1c-72c8fc033134",
+    "$viewOrder": 0,
+    "expanded": true,
+    "cn": [
+        {
+            "id": "ExtBox1-ext-gen117952",
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "collapsible": true,
+                "store": "NodesXmlTreeStore",
+                "layout|flex": null,
+                "layout|region": "west",
+                "layout|split": true
+            },
+            "customConfigs": [],
+            "iconCls": "icon-linkedinstance",
+            "expanded": true,
+            "masterInstanceId": "ExtBox1-ext-gen116924"
+        },
+        {
+            "id": "ExtBox1-ext-gen131714",
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "collapsible": true,
+                "layout|region": "east",
+                "layout|split": true
+            },
+            "customConfigs": [],
+            "iconCls": "icon-linkedinstance",
+            "expanded": true,
+            "masterInstanceId": "ExtBox1-ext-gen131035"
+        },
+        {
+            "id": "ExtBox1-ext-gen40701",
+            "type": "panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "height": 150,
+                "collapsible": true,
+                "title": "My Panel",
+                "designer|userClassName": "MyPanel2",
+                "layout|region": "north",
+                "layout|split": true
+            },
+            "customConfigs": [],
+            "expanded": true
+        },
+        {
+            "id": "ExtBox1-ext-gen96394",
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|region": "center"
+            },
+            "customConfigs": [],
+            "iconCls": "icon-linkedinstance",
+            "expanded": true,
+            "masterInstanceId": "ExtBox1-ext-gen40276"
+        }
+    ]
+}

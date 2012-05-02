@@ -1,0 +1,54 @@
+{
+    "id": "ExtBox1-ext-gen98654",
+    "type": "controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "UserGridController"
+    },
+    "customConfigs": [],
+    "designerId": "3d62d1d9-8854-4967-b722-f95e6af2b091",
+    "$viewOrder": 1,
+    "expanded": false,
+    "cn": [
+        {
+            "id": "ExtBox1-ext-gen99155",
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onGridpanelSelectionChange",
+                "implHandler": "this.getUserGrid().down('#grid').update(selections[0].data); \r\nconsole.log(selections[0].data);",
+                "name": "selectionchange",
+                "scope": "me",
+                "designer|targetType": "Ext.grid.Panel",
+                "designer|controlQuery": "gridpanel",
+                "designer|userClassName": "onGridpanelSelectionChange"
+            },
+            "customConfigs": [],
+            "expanded": true
+        },
+        {
+            "id": "ExtBox1-ext-gen100108",
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "UserGrid",
+                "selector": "#usergrid",
+                "designer|userClassName": "UserGrid"
+            },
+            "customConfigs": [],
+            "expanded": true
+        }
+    ]
+}

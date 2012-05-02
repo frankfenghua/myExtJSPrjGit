@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nodes>
+	<node>
+		<label>frank</label>
+		<type>account</type>
+	</node>
+	<node>
+		<label>tom</label>
+		<type>hr</type>
+	</node>
+</nodes>			

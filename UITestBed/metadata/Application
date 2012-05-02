@@ -1,0 +1,67 @@
+{
+    "id": "ExtBox1-ext-gen4012",
+    "type": "application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "models": [
+            "TreeModel",
+            "CarDataModel",
+            "UserModel",
+            "MyUserModel",
+            "NodeXmlModel",
+            "GUSXmlTreeModel"
+        ],
+        "stores": [
+            "CarDataJson",
+            "XmlStore",
+            "UserXmlTreeStore",
+            "UserJsonStore",
+            "NodesXmlTreeStore",
+            "UserTreeStore",
+            "GUSXmlTreeStore"
+        ],
+        "views": [
+            "MyViewport",
+            "UserGridPanel",
+            "TreePanelTest",
+            "ExplorerTreePanel",
+            "GUSXmlTreePanel"
+        ],
+        "autoCreateViewport": true,
+        "name": "MyApp",
+        "controllers": [
+            "ExplorerController",
+            "UserGridController",
+            "JsonUserController",
+            "GUSXmlTreepanelController"
+        ]
+    },
+    "customConfigs": [],
+    "designerId": "application",
+    "$viewOrder": 0,
+    "iconCls": "icon-application",
+    "expanded": true,
+    "cn": [
+        {
+            "id": "ExtBox1-ext-gen55740",
+            "type": "loader",
+            "reference": {
+                "name": "loader",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "disableCaching": false,
+                "enabled": true,
+                "designer|userClassName": "Loader"
+            },
+            "customConfigs": [],
+            "iconCls": "icon-loader",
+            "expanded": true
+        }
+    ]
+}

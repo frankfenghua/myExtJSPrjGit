@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<explorer xmlns:wicket="http://wicket.sourceforge.net/">
+	<guidelineSets>
+		<guidelineSet nodeid="E659F240-5429-564A-B0B8-9B6766A7D8F8" selected="true" versionid="BDD8F182-B5CE-E8B9-A49A-C6DEBE94258A">2%20more%20%20Guideline%20Set</guidelineSet>
+		<guidelineSet nodeid="AA692AD8-69FD-8091-7761-09919E19A656" selected="false" versionid="E44D2C82-C002-BF67-4006-C513C53F60FB">Acute%20Myeloid%20Leukemia</guidelineSet>
+		<guidelineSet nodeid="6CD0B3DD-4FD8-7CAC-33EB-BEE8B07A077C" selected="false" versionid="77D36F1D-A042-2256-0909-2427AE7D7B21">Anal%20Carcinoma</guidelineSet>
+		<guidelineSet nodeid="95338166-CD96-A832-AAF8-017D96B5B45B" selected="false" versionid="57193764-7959-2EA5-8F76-589429B43276">Back%20Forword%20Button%20Guideline</guidelineSet>
+		<guidelineSet nodeid="1E026470-85E7-A106-D21F-712D4FEE8AB8" selected="false" versionid="9B35FA3A-4C48-3B4F-492D-8C26AB445F5E">Bone%20Cancer</guidelineSet>
+		<guidelineSet nodeid="40B189AC-3D8E-3D65-D786-A871B8D78DA1" selected="false" versionid="7683949C-734B-4150-5EA5-6A50F3985DF5">Breast%20Cancer</guidelineSet>
+		<guidelineSet nodeid="F746A936-10B6-670C-96A5-4D63165A29CE" selected="false" versionid="B7769DAD-0D40-6C21-CF78-B56C4D892374">Cancer-%20and%20Chemotherapy-%20Induced%20Anemia</guidelineSet>
+		<guidelineSet nodeid="2088658A-7D9A-E3A0-10A7-E1E19E111834" selected="false" versionid="03954D42-9524-C383-5A20-506A714D15B9">Central%20Nervous%20System%20Cancers</guidelineSet>
+		<guidelineSet nodeid="A3C571A0-CEF1-6F4C-EBC8-41541C133EC3" selected="false" versionid="F43DF9E8-3084-D97E-DD26-2B10119D615E">Chronic%20Myelogenous%20Leukemia</guidelineSet>
+		<guidelineSet nodeid="642C2FFD-587C-B8B9-6967-E6D3290FA125" selected="false" versionid="7A26C133-B443-5CFB-AFB3-B7FAA0D8508A">Colon%20Cancer</guidelineSet>
+		<guidelineSet nodeid="F6F713E7-E239-355B-6642-7FB25851E373" selected="false" versionid="62CC49AA-FEA9-9E25-F196-40A05130F368">delete%20rename</guidelineSet>
+		<guidelineSet nodeid="5BCAC9A0-59A7-525B-00FE-FEDDBF6CF223" selected="false" versionid="81681EF9-3BF7-7963-AC7E-7F284A2D0D60">delete2</guidelineSet>
+		<guidelineSet nodeid="71D79969-88CD-CF65-3915-3105706C8B9C" selected="false" versionid="6041EF8D-630D-F2B0-098C-45BB5D6EA40A">GUS-1248%20multiple%20adjacent%20spaces%20set</guidelineSet>
+		<guidelineSet nodeid="459A0838-DA80-69BD-6F24-1BC790A22659" selected="false" versionid="A619B51B-F5D0-2710-067B-5FEBD3F21B7E">Multiple%20Myeloma</guidelineSet>
+		<guidelineSet nodeid="3BD69BA2-8F31-6266-845E-1CFE47336FDA" selected="false" versionid="D336484E-6B59-733F-1252-AD39D52A8754">Myelodysplastic%20Syndromes</guidelineSet>
+		<guidelineSet nodeid="ABAC3E14-1EBD-B460-1651-EB341BC14BC7" selected="false" versionid="CAF9CF9F-AB0A-FB1E-F647-433888D45EE9">Non-Hodgkin%27s%20Lymphomas</guidelineSet>
+		<guidelineSet nodeid="9CA62955-EF5D-2B91-D5A7-7E46E2C54077" selected="false" versionid="CDEFAF4C-D4AF-6699-3789-E49AF9F58024">Ovarian%20Guideline%20Set%20</guidelineSet>
+		<guidelineSet nodeid="9A3C4A13-22C4-7F8F-9171-4166F4E365A6" selected="false" versionid="233FD65E-56A6-1C39-4216-DF3C9AE4E379">Prostate%20Cancer</guidelineSet>
+		<guidelineSet nodeid="361D8C13-11AC-63B3-D64C-A95D14AFAE75" selected="false" versionid="BCF61330-2065-FF5D-A071-3617BCF9E555">QA_Test%20001</guidelineSet>
+		<guidelineSet nodeid="CB6DD228-1383-E7C0-1087-D17364143652" selected="false" versionid="FAE5735B-54F6-BB9C-23EB-51B4D3178A37">QA_Test%20001_2nd</guidelineSet>
+		<guidelineSet nodeid="842FF852-0F31-E716-098B-30BBD80D6B9C" selected="false" versionid="0E195F27-3A63-7B67-1B8A-CA7BA24069E7">Systemic%20Light%20Chain%20Amyloidosis</guidelineSet>
+		<guidelineSet nodeid="A7C98607-C413-0590-48DF-E6E67C6684F8" selected="false" versionid="588117A4-D13E-0494-F187-670C0CF05860">test%20GL</guidelineSet>
+		<guidelineSet nodeid="D5E506E8-B240-47F8-8644-A0F5FC1F8793" selected="false" versionid="1DF28EB6-2881-B8BE-B944-D1263E962519">Waldenstr%C3%B6m%27s%20Macroglobulinemia%2FLymphoplasmacytic%20Lymphoma</guidelineSet>
+	</guidelineSets>
+	<node label="%20Feng%20Guideline%20" type="GUIDELINE" nodeid="9740015D-3447-1CC6-949E-C91D0876F8D1" selected="true" version="0.34" seqnum="" year="2012" versionid="D956A51D-A9A8-8398-B191-79A44A97D75F">
+		<node label="New%20Algorithm" srcnodeid="4840DA13-81EE-A536-21F8-9437DA6D4535" type="GUIDELINE_SECTION" subtype="PATHWAY_SECTION" srcversid="11F9E5C0-721A-FCD4-04D4-BDA93B17D07E" nodeid="gls@453FEFCF-41F0-2993-EFDC-63FD2B0ABC98" versionid="gls@5C17D929-4FB7-284E-D4A7-F91E58A4A026" selected="false" version="2012.0.34" seqnum="">
+			<node label="001%20ext%20ref%20url" type="PHASE" nodeid="FDD55E9E-6FB7-B62A-AF2D-2A416881BF46" versionid="5BBFD36C-2921-0935-61AD-440DB7CFF112" selected="false"/>
+		</node>
+	</node>
+	<node label="changed-K" type="GUIDELINE" nodeid="A769E48F-6742-FCDC-5F8E-DF081CC29E87" selected="false" version="0.34" seqnum="" year="2012" versionid="6350BC6F-1513-2C54-A65E-F22897C8A011">
+		<node label="for%20feng" srcnodeid="B55AA54B-EEBC-70CC-200F-7D5CF23D6ED4" type="GUIDELINE_SECTION" subtype="PATHWAY_SECTION" srcversid="42D9E455-9896-ECBA-70D5-E5CAD69D898B" nodeid="gls@F11B5563-E834-2781-9A52-7E8450BC495B" versionid="gls@75E50D5D-9A4A-8592-1FC1-837C8B0FDCE7" selected="false" version="2012.0.34" seqnum="">
+			<node label="New%20Phase" type="PHASE" nodeid="771FF604-520A-2D44-DD50-008546D35E35" versionid="7DD2D124-88C8-8014-BE2D-55FF74B3ABCD" selected="false"/>
+		</node>
+		<node label="Alg1" srcnodeid="375B042E-0232-1654-9AC8-461FE09922CD" type="GUIDELINE_SECTION" subtype="PATHWAY_SECTION" srcversid="BCB8593A-952A-FC7A-BB9C-D016AD6B5CCD" nodeid="gls@6DAA7D6B-5626-6792-698B-875B3A3DA858" versionid="gls@B14D5EDD-6766-C048-6E40-D8F1A55B4B3E" selected="false" version="2012.0.34" seqnum="">
+			<node label="Test%20Phase%201" type="PHASE" nodeid="17D0D6F3-C9B8-6660-A12B-283B8822E4A9" versionid="7B767413-AD51-2FFC-2707-4B16FF5F3242" selected="false"/>
+		</node>
+		<node label="GUS-1023" srcnodeid="FEEC8804-571C-DCB7-0A32-38A41312692E" type="GUIDELINE_SECTION" subtype="PATHWAY_SECTION" srcversid="1CFD7EA1-FCFE-C7B0-68DA-2BCD5A791226" nodeid="gls@5E623ED1-1C2D-326D-3599-D35DC4FEF94E" versionid="gls@E582B4CA-D629-D393-EFC0-05E722A4E71D" selected="false" version="2012.0.34" seqnum=""/>
+	</node>
+	<node label="empty%20guideline" type="GUIDELINE" nodeid="38A1F470-3359-6C66-DC94-B8B4ED2ACD5C" selected="false" version="0.0" seqnum="" year="2012" versionid="B37C23D5-10D0-003A-5704-1D87A94416A0"/>
+	<node label="Feng%20Guideline%202" type="GUIDELINE" nodeid="DA9BAD6C-8A5C-8F60-0838-9954CA05797A" selected="false" version="0.25" seqnum="" year="2012" versionid="58BDDC18-3367-E271-0302-31F2EEF73663"/>
+	<node label="file%20link%20test%20guideline" type="GUIDELINE" nodeid="C1F309B4-DD7E-90DD-0EB6-6174020F23B6" selected="false" version="0.5" seqnum="" year="2012" versionid="0C19E73A-3358-8B75-416D-6AE2A99E5528">
+		<node label="fille%20link%20test" srcnodeid="610EEBD1-4969-34FB-B6C3-E4AC213B3E36" type="GUIDELINE_SECTION" subtype="PATHWAY_SECTION" srcversid="67883A69-BEF9-A1A5-902A-647F9F3E2E22" nodeid="gls@DB09E1D5-F96D-4F2A-84F1-667DDB389D9B" versionid="gls@63BC2F94-1185-8718-53A9-B69BA5DAAD97" selected="false" version="2012.0.05" seqnum="">
+			<node label="New%20Phase" type="PHASE" nodeid="25758870-D266-D45D-764F-137D17F26EB3" versionid="9CE9E7CF-0639-52CE-A4FE-7375C44CF487" selected="false"/>
+		</node>
+		<node label="File%20link%20phase%20header%20link" srcnodeid="2A18EFA2-62BF-B7BB-9B04-0557133A483C" type="GUIDELINE_SECTION" subtype="PATHWAY_SECTION" srcversid="EAEBB7D6-9341-AD4A-8C79-C81E4884B464" nodeid="gls@DCD2859F-E6B2-A04B-E54F-4C695D8965D8" versionid="gls@3297FB29-8FC3-E2B1-758E-B572FB98AFD0" selected="false" version="2012.0.05" seqnum="">
+			<node label="%C2%A0Phase%20header%20hyperlink" type="PHASE" nodeid="5B4B1CEC-565D-6E2D-099F-755872071C36" versionid="035AFE16-9B5A-BAD3-732A-E1FC1DCDCF35" selected="false"/>
+		</node>
+	</node>
+	<node label="GUS-1023%20Guideline" type="GUIDELINE" nodeid="379B64BF-B46B-1B1E-D11E-230B4F778EE0" selected="false" version="0.0" seqnum="" year="2012" versionid="54D928E8-703C-CF56-904E-8B75B7D06F5E">
+		<node label="GUS-1023" srcnodeid="FEEC8804-571C-DCB7-0A32-38A41312692E" type="GUIDELINE_SECTION" subtype="PATHWAY_SECTION" srcversid="1CFD7EA1-FCFE-C7B0-68DA-2BCD5A791226" nodeid="gls@D156ABCD-C7E8-4A51-D1F6-739282853A77" versionid="gls@BE1B1D72-B3BA-2DB4-B989-3A779DDE5C2F" selected="false" version="2012.0.0" seqnum=""/>
+	</node>
+	<node label="long%20name%20Guideline" type="GUIDELINE" nodeid="6AC24513-0813-046B-11AA-F871F420FF6E" selected="false" version="0.2" seqnum="" year="2012" versionid="E0BC7228-AA9D-BEFD-C8AC-1584289558E7">
+		<node label="New%20Algorithm%20Log%20into%20the%20GL%20web%20and%20select%20an%20algorithm%20with%20a%20very%20long%20name.%20The%20subtitle%20should%20not%20wrap%20until%20it%20gets%20to%20the%20left%20most%20header%20button." srcnodeid="4840DA13-81EE-A536-21F8-9437DA6D4535" type="GUIDELINE_SECTION" subtype="PATHWAY_SECTION" srcversid="11F9E5C0-721A-FCD4-04D4-BDA93B17D07E" nodeid="gls@DC3700A3-6FFD-2E43-5C7B-16BFCDFCED1A" versionid="gls@A5F23FFD-6908-1103-18BC-48A04F00F029" selected="false" version="2012.0.02" seqnum="">
+			<node label="001%20ext%20ref%20url" type="PHASE" nodeid="FDD55E9E-6FB7-B62A-AF2D-2A416881BF46" versionid="5BBFD36C-2921-0935-61AD-440DB7CFF112" selected="false"/>
+		</node>
+	</node>
+</explorer>

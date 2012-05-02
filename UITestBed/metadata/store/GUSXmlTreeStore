@@ -1,0 +1,55 @@
+{
+    "id": "ExtBox1-ext-gen126476",
+    "type": "xmltreestore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "storeId": "GUSXmlTreeStore",
+        "model": "GUSXmlTreeModel",
+        "root": "{text: 'Guideline', id:'label', expanded:true}",
+        "designer|userClassName": "GUSXmlTreeStore"
+    },
+    "customConfigs": [],
+    "designerId": "0ad320d3-8d34-44d4-a79f-47d4fc936d26",
+    "$viewOrder": 6,
+    "expanded": true,
+    "cn": [
+        {
+            "id": "ExtBox1-ext-gen126483",
+            "type": "ajaxproxy",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "data/gus.xml",
+                "designer|userClassName": "MyAjaxProxy5"
+            },
+            "customConfigs": [],
+            "expanded": true,
+            "cn": [
+                {
+                    "id": "ExtBox1-ext-gen126491",
+                    "type": "xmlreader",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": "explorer",
+                        "record": "node",
+                        "designer|userClassName": "MyXmlReader3"
+                    },
+                    "customConfigs": [],
+                    "expanded": true
+                }
+            ]
+        }
+    ]
+}

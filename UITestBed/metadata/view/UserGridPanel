@@ -1,0 +1,143 @@
+{
+    "id": "ExtBox1-ext-gen40276",
+    "type": "panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "id": "usergridpanel",
+        "autoScroll": true,
+        "layout": "vbox",
+        "collapsible": true,
+        "title": null,
+        "designer|userClassName": "UserGridPanel",
+        "designer|userAlias": "usergridpanel",
+        "container|align": "stretch"
+    },
+    "customConfigs": [],
+    "designerId": "5a65124c-04cf-4e6f-af50-eb6eb0af93b1",
+    "$viewOrder": 1,
+    "expanded": true,
+    "cn": [
+        {
+            "id": "ExtBox1-ext-gen123156",
+            "type": "panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "id": "top",
+                "tpl": "Text: {text}<br>\nID: <a href=\"{text}\" target=\"_blank\">{id}</a><br> \nCls: {cls}<br>\nIs Leaf: {leaf}<br>",
+                "title": "Top Panel",
+                "designer|userClassName": "MyPanel3",
+                "layout|flex": 1
+            },
+            "customConfigs": [],
+            "expanded": true
+        },
+        {
+            "id": "ExtBox1-ext-gen64776",
+            "type": "gridpanel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "id": "grid",
+                "title": "My xml Grid Panel",
+                "store": "XmlStore",
+                "designer|userClassName": "MyGridPanel",
+                "layout|flex": 1
+            },
+            "customConfigs": [],
+            "expanded": false,
+            "cn": [
+                {
+                    "id": "ExtBox1-ext-gen64823",
+                    "type": "gridview",
+                    "reference": {
+                        "name": "viewConfig",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyGridView"
+                    },
+                    "customConfigs": [],
+                    "expanded": true
+                },
+                {
+                    "id": "ExtBox1-ext-gen95036",
+                    "type": "numbercolumn",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "id",
+                        "text": "Id",
+                        "designer|userClassName": "MyNumberColumn1"
+                    },
+                    "customConfigs": [],
+                    "expanded": true
+                },
+                {
+                    "id": "ExtBox1-ext-gen95047",
+                    "type": "gridcolumn",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "name",
+                        "text": "Name",
+                        "designer|userClassName": "MyColumn1"
+                    },
+                    "customConfigs": [],
+                    "expanded": true
+                },
+                {
+                    "id": "ExtBox1-ext-gen95058",
+                    "type": "gridcolumn",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "email",
+                        "text": "Email",
+                        "designer|userClassName": "MyColumn2"
+                    },
+                    "customConfigs": [],
+                    "expanded": true
+                }
+            ]
+        },
+        {
+            "id": "ExtBox1-ext-gen130588",
+            "type": "panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "id": "bottom",
+                "tpl": "Label: {label}<br>\nType: <a href=\"{type}\" target=\"_blank\">{type}</a><br> \nVersionID: {versionid}<br>",
+                "title": "Bottom Panel",
+                "designer|userClassName": "MyPanel4",
+                "layout|flex": 1
+            },
+            "customConfigs": [],
+            "expanded": true
+        }
+    ]
+}

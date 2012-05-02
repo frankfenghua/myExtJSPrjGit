@@ -1,0 +1,36 @@
+{
+    "id": "ExtBox1-ext-gen115865",
+    "type": "treepanel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "height": 250,
+        "width": 400,
+        "title": "GUS Tree Panel",
+        "store": "NodesXmlTreeStore",
+        "designer|userClassName": "TreePanelTest"
+    },
+    "customConfigs": [],
+    "designerId": "fdd934f3-a4ae-4ad6-bb98-4138711846e4",
+    "$viewOrder": 2,
+    "expanded": false,
+    "cn": [
+        {
+            "id": "ExtBox1-ext-gen115874",
+            "type": "treeview",
+            "reference": {
+                "name": "viewConfig",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyTreeView1"
+            },
+            "customConfigs": [],
+            "expanded": true
+        }
+    ]
+}

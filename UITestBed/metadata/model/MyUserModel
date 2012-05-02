@@ -1,0 +1,63 @@
+{
+    "id": "ExtBox1-ext-gen111483",
+    "type": "datamodel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "MyUserModel"
+    },
+    "customConfigs": [],
+    "designerId": "699c933e-ee34-4a0d-8364-902968194ac2",
+    "$viewOrder": 3,
+    "expanded": false,
+    "cn": [
+        {
+            "id": "ExtBox1-ext-gen111674",
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "id",
+                "designer|userClassName": "MyField7"
+            },
+            "customConfigs": [],
+            "expanded": true
+        },
+        {
+            "id": "ExtBox1-ext-gen111844",
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "name",
+                "designer|userClassName": "MyField8"
+            },
+            "customConfigs": [],
+            "expanded": true
+        },
+        {
+            "id": "ExtBox1-ext-gen112032",
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "profile_image_url",
+                "designer|userClassName": "MyField9"
+            },
+            "customConfigs": [],
+            "expanded": true
+        }
+    ]
+}

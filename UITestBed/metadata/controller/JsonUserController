@@ -1,0 +1,54 @@
+{
+    "id": "ExtBox1-ext-gen104859",
+    "type": "controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "JsonUserController"
+    },
+    "customConfigs": [],
+    "designerId": "73bcf5a7-232f-43f4-9d2d-fd2d185679a2",
+    "$viewOrder": 2,
+    "expanded": false,
+    "cn": [
+        {
+            "id": "ExtBox1-ext-gen105078",
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onGridpanelSelectionChange",
+                "implHandler": "",
+                "name": "selectionchange",
+                "scope": "me",
+                "designer|targetType": "Ext.grid.Panel",
+                "designer|controlQuery": "gridpanel",
+                "designer|userClassName": "onGridpanelSelectionChange"
+            },
+            "customConfigs": [],
+            "expanded": true
+        },
+        {
+            "id": "ExtBox1-ext-gen105334",
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "UserGrid",
+                "selector": "#usergrid",
+                "designer|userClassName": "UserGrid"
+            },
+            "customConfigs": [],
+            "expanded": true
+        }
+    ]
+}

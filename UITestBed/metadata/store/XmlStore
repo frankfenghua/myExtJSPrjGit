@@ -1,0 +1,53 @@
+{
+    "id": "ExtBox1-ext-gen88670",
+    "type": "xmlstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "storeId": "XmlStore",
+        "model": "UserModel",
+        "designer|userClassName": "XmlStore"
+    },
+    "customConfigs": [],
+    "designerId": "21d35074-1a19-4e44-8920-5ab406be9832",
+    "$viewOrder": 1,
+    "expanded": false,
+    "cn": [
+        {
+            "id": "ExtBox1-ext-gen88677",
+            "type": "ajaxproxy",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "data/users.xml",
+                "designer|userClassName": "MyAjaxProxy1"
+            },
+            "customConfigs": [],
+            "expanded": true,
+            "cn": [
+                {
+                    "id": "ExtBox1-ext-gen88685",
+                    "type": "xmlreader",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": null,
+                        "designer|userClassName": "MyXmlReader"
+                    },
+                    "customConfigs": [],
+                    "expanded": true
+                }
+            ]
+        }
+    ]
+}

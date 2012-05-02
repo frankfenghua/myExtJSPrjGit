@@ -1,0 +1,70 @@
+{
+    "id": "ExtBox1-ext-gen112213",
+    "type": "jsonpstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "storeId": "UserTreeStore",
+        "model": "MyUserModel",
+        "designer|userClassName": "UserTreeStore"
+    },
+    "customConfigs": [],
+    "designerId": "211e5b01-5dfd-430b-84b1-22b109eac055",
+    "$viewOrder": 5,
+    "expanded": false,
+    "cn": [
+        {
+            "id": "ExtBox1-ext-gen112220",
+            "type": "jsonpproxy",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "https://api.twitter.com/1/lists/members.json?owner_screen_name=Sencha&slug=sencha-team&skip_status=true",
+                "designer|userClassName": "MyJsonPProxy"
+            },
+            "customConfigs": [],
+            "expanded": true,
+            "cn": [
+                {
+                    "id": "ExtBox1-ext-gen112228",
+                    "type": "jsonreader",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": "users",
+                        "designer|userClassName": "MyJsonReader2"
+                    },
+                    "customConfigs": [],
+                    "expanded": true
+                }
+            ]
+        },
+        {
+            "id": "ExtBox1-ext-gen115228",
+            "type": "basiceventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onJsonpstoreWrite",
+                "implHandler": "",
+                "name": "write",
+                "scope": "me",
+                "designer|userClassName": "onJsonpstoreWrite"
+            },
+            "customConfigs": [],
+            "expanded": true
+        }
+    ]
+}

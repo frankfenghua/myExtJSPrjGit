@@ -1,0 +1,85 @@
+{
+    "id": "ExtBox1-ext-gen109043",
+    "type": "xmltreestore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "storeId": "NodesXmlTreeStore",
+        "model": "NodeXmlModel",
+        "root": "{text:'Ext JS', id: 'src', expanded:true}",
+        "designer|userClassName": "NodesXmlTreeStore"
+    },
+    "customConfigs": [],
+    "designerId": "d386565d-f0bd-43b5-b68d-ce0bd1799a46",
+    "$viewOrder": 4,
+    "expanded": false,
+    "cn": [
+        {
+            "id": "ExtBox1-ext-gen109050",
+            "type": "ajaxproxy",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "data/nodes.xml",
+                "designer|userClassName": "MyAjaxProxy4"
+            },
+            "customConfigs": [],
+            "expanded": true,
+            "cn": [
+                {
+                    "id": "ExtBox1-ext-gen109058",
+                    "type": "xmlreader",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": "nodes",
+                        "record": "node",
+                        "designer|userClassName": "MyXmlReader2"
+                    },
+                    "customConfigs": [],
+                    "expanded": true
+                }
+            ]
+        },
+        {
+            "id": "ExtBox1-ext-gen110192",
+            "type": "sorter",
+            "reference": {
+                "name": "sorters",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "property": "leaf",
+                "designer|userClassName": "MySorter"
+            },
+            "customConfigs": [],
+            "expanded": true
+        },
+        {
+            "id": "ExtBox1-ext-gen110463",
+            "type": "sorter",
+            "reference": {
+                "name": "sorters",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "property": "text",
+                "designer|userClassName": "MySorter1"
+            },
+            "customConfigs": [],
+            "expanded": true
+        }
+    ]
+}

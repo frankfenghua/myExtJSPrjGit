@@ -1,0 +1,70 @@
+{
+    "id": "ExtBox1-ext-gen53520",
+    "type": "controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "ExplorerController"
+    },
+    "customConfigs": [],
+    "designerId": "6e7b00f7-0aa1-4034-8d62-61684b663948",
+    "$viewOrder": 0,
+    "expanded": false,
+    "cn": [
+        {
+            "id": "ExtBox1-ext-gen53664",
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onTreepanelSelectionChange",
+                "implHandler": "this.getUserGridPanel().down('#top').update(selections[0].data); \r\n",
+                "name": "selectionchange",
+                "scope": "me",
+                "designer|targetType": "Ext.tree.Panel",
+                "designer|controlQuery": "treepanel",
+                "designer|userClassName": "onTreepanelSelectionChange"
+            },
+            "customConfigs": [],
+            "expanded": true
+        },
+        {
+            "id": "ExtBox1-ext-gen54646",
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "ExplorerTreePanel",
+                "selector": "#explorertreepanel",
+                "designer|userClassName": "ExplorerTreePanel"
+            },
+            "customConfigs": [],
+            "expanded": true
+        },
+        {
+            "id": "ExtBox1-ext-gen124534",
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "UserGridPanel",
+                "selector": "usergridpanel",
+                "designer|userClassName": "UserGridPanel"
+            },
+            "customConfigs": [],
+            "expanded": true
+        }
+    ]
+}

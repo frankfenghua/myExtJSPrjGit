@@ -1,0 +1,208 @@
+{
+    "name": "MyTestBed",
+    "settings": {
+        "urlPrefix": "http://localhost/myextjs/UITestBed",
+        "directAPI": "",
+        "spacesToIndent": 4,
+        "codeGenFormat": "Class",
+        "exportPath": "",
+        "extPath": "ext/",
+        "senchaIoKey": "",
+        "senchaIoPath": "http://extjs.cachefly.net/designer/IO/",
+        "lineEnding": "CRLF",
+        "instantiateStore": true,
+        "genTimestamps": false,
+        "saveOnDeploy": false,
+        "appName": "MyApp",
+        "mapsAPI": "http://maps.google.com/maps/api/js?sensor=true"
+    },
+    "xdsVersion": "2.0.0",
+    "xdsBuild": "412",
+    "framework": "ext40",
+    "topInstanceFileMap": {
+        "14d0f432-21df-435b-ad1c-72c8fc033134": {
+            "paths": [
+                "metadata/view/MyViewport",
+                "app/view/override/MyViewport.js",
+                "app/view/MyViewport.js",
+                "app/view/Viewport.js"
+            ],
+            "className": "MyViewport"
+        },
+        "de069f47-9616-441a-9902-d6dae7a2a32e": {
+            "paths": [
+                "metadata/model/TreeModel",
+                "app/model/override/TreeModel.js",
+                "app/model/TreeModel.js"
+            ],
+            "className": "TreeModel"
+        },
+        "6e7b00f7-0aa1-4034-8d62-61684b663948": {
+            "paths": [
+                "metadata/controller/ExplorerController",
+                "app/controller/override/ExplorerController.js",
+                "app/controller/ExplorerController.js"
+            ],
+            "className": "ExplorerController"
+        },
+        "c065b358-9352-4d37-aaf0-789ce7386fd1": {
+            "paths": [
+                "metadata/store/CarDataJson",
+                "app/store/override/CarDataJson.js",
+                "app/store/CarDataJson.js"
+            ],
+            "className": "CarDataJson"
+        },
+        "f5c2755a-7639-457d-9461-56034e423c6e": {
+            "paths": [
+                "metadata/model/CarDataModel",
+                "app/model/override/CarDataModel.js",
+                "app/model/CarDataModel.js"
+            ],
+            "className": "CarDataModel"
+        },
+        "21d35074-1a19-4e44-8920-5ab406be9832": {
+            "paths": [
+                "metadata/store/XmlStore",
+                "app/store/override/XmlStore.js",
+                "app/store/XmlStore.js"
+            ],
+            "className": "XmlStore"
+        },
+        "d424ebc6-be6f-4967-b3e7-3c8c1dff7d0a": {
+            "paths": [
+                "metadata/model/UserModel",
+                "app/model/override/UserModel.js",
+                "app/model/UserModel.js"
+            ],
+            "className": "UserModel"
+        },
+        "949f2ee8-b4c5-4629-b1ef-8612e59a1813": {
+            "paths": [
+                "metadata/store/UserXmlTreeStore",
+                "app/store/override/UserXmlTreeStore.js",
+                "app/store/UserXmlTreeStore.js"
+            ],
+            "className": "UserXmlTreeStore"
+        },
+        "5a65124c-04cf-4e6f-af50-eb6eb0af93b1": {
+            "paths": [
+                "metadata/view/UserGridPanel",
+                "app/view/override/UserGridPanel.js",
+                "app/view/UserGridPanel.js"
+            ],
+            "className": "UserGridPanel"
+        },
+        "3d62d1d9-8854-4967-b722-f95e6af2b091": {
+            "paths": [
+                "metadata/controller/UserGridController",
+                "app/controller/override/UserGridController.js",
+                "app/controller/UserGridController.js"
+            ],
+            "className": "UserGridController"
+        },
+        "b9730ec7-9849-42b8-bf04-42319dafcf46": {
+            "paths": [
+                "metadata/store/UserJsonStore",
+                "app/store/override/UserJsonStore.js",
+                "app/store/UserJsonStore.js"
+            ],
+            "className": "UserJsonStore"
+        },
+        "73bcf5a7-232f-43f4-9d2d-fd2d185679a2": {
+            "paths": [
+                "metadata/controller/JsonUserController",
+                "app/controller/override/JsonUserController.js",
+                "app/controller/JsonUserController.js"
+            ],
+            "className": "JsonUserController"
+        },
+        "d386565d-f0bd-43b5-b68d-ce0bd1799a46": {
+            "paths": [
+                "metadata/store/NodesXmlTreeStore",
+                "app/store/override/NodesXmlTreeStore.js",
+                "app/store/NodesXmlTreeStore.js"
+            ],
+            "className": "NodesXmlTreeStore"
+        },
+        "211e5b01-5dfd-430b-84b1-22b109eac055": {
+            "paths": [
+                "metadata/store/UserTreeStore",
+                "app/store/override/UserTreeStore.js",
+                "app/store/UserTreeStore.js"
+            ],
+            "className": "UserTreeStore"
+        },
+        "699c933e-ee34-4a0d-8364-902968194ac2": {
+            "paths": [
+                "metadata/model/MyUserModel",
+                "app/model/override/MyUserModel.js",
+                "app/model/MyUserModel.js"
+            ],
+            "className": "MyUserModel"
+        },
+        "fdd934f3-a4ae-4ad6-bb98-4138711846e4": {
+            "paths": [
+                "metadata/view/TreePanelTest",
+                "app/view/override/TreePanelTest.js",
+                "app/view/TreePanelTest.js"
+            ],
+            "className": "TreePanelTest"
+        },
+        "f200be67-66e0-4f69-86fc-8400fea30155": {
+            "paths": [
+                "metadata/view/ExplorerTreePanel",
+                "app/view/override/ExplorerTreePanel.js",
+                "app/view/ExplorerTreePanel.js"
+            ],
+            "className": "ExplorerTreePanel"
+        },
+        "0ad320d3-8d34-44d4-a79f-47d4fc936d26": {
+            "paths": [
+                "metadata/store/GUSXmlTreeStore",
+                "app/store/override/GUSXmlTreeStore.js",
+                "app/store/GUSXmlTreeStore.js"
+            ],
+            "className": "GUSXmlTreeStore"
+        },
+        "e40ad9b1-bdd4-4c42-9ec7-7a1fc9259907": {
+            "paths": [
+                "metadata/model/NodeXmlModel",
+                "app/model/override/NodeXmlModel.js",
+                "app/model/NodeXmlModel.js"
+            ],
+            "className": "NodeXmlModel"
+        },
+        "35fa4a58-0741-4a30-81af-11b8d6d079af": {
+            "paths": [
+                "metadata/view/GUSXmlTreePanel",
+                "app/view/override/GUSXmlTreePanel.js",
+                "app/view/GUSXmlTreePanel.js"
+            ],
+            "className": "GUSXmlTreePanel"
+        },
+        "b5de3c59-05af-444e-9727-cd32415a9ee5": {
+            "paths": [
+                "metadata/model/GUSXmlTreeModel",
+                "app/model/override/GUSXmlTreeModel.js",
+                "app/model/GUSXmlTreeModel.js"
+            ],
+            "className": "GUSXmlTreeModel"
+        },
+        "52d51a97-d82d-4cab-9be8-4a82fe0956a3": {
+            "paths": [
+                "metadata/controller/GUSXmlTreepanelController",
+                "app/controller/override/GUSXmlTreepanelController.js",
+                "app/controller/GUSXmlTreepanelController.js"
+            ],
+            "className": "GUSXmlTreepanelController"
+        }
+    },
+    "expandedState": {
+        "data": true,
+        "model": true,
+        "component": true,
+        "controller": false,
+        "resource": false
+    }
+}

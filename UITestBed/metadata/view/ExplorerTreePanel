@@ -1,0 +1,36 @@
+{
+    "id": "ExtBox1-ext-gen116924",
+    "type": "treepanel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "id": "explorertreepanel",
+        "width": 150,
+        "title": "Flat Tree Panel",
+        "designer|userClassName": "ExplorerTreePanel",
+        "designer|userAlias": "explorertreepanel"
+    },
+    "customConfigs": [],
+    "designerId": "f200be67-66e0-4f69-86fc-8400fea30155",
+    "$viewOrder": 3,
+    "expanded": false,
+    "cn": [
+        {
+            "id": "ExtBox1-ext-gen116943",
+            "type": "treeview",
+            "reference": {
+                "name": "viewConfig",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyTreeView2"
+            },
+            "customConfigs": [],
+            "expanded": true
+        }
+    ]
+}

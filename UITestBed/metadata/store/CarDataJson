@@ -1,0 +1,53 @@
+{
+    "id": "ExtBox1-ext-gen61331",
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "storeId": "CarDataJson",
+        "model": "CarDataModel",
+        "designer|userClassName": "CarDataJson"
+    },
+    "customConfigs": [],
+    "designerId": "c065b358-9352-4d37-aaf0-789ce7386fd1",
+    "$viewOrder": 0,
+    "expanded": false,
+    "cn": [
+        {
+            "id": "ExtBox1-ext-gen61338",
+            "type": "ajaxproxy",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "data/mycars.json",
+                "designer|userClassName": "MyAjaxProxy1"
+            },
+            "customConfigs": [],
+            "expanded": true,
+            "cn": [
+                {
+                    "id": "ExtBox1-ext-gen61346",
+                    "type": "jsonreader",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": "data",
+                        "designer|userClassName": "MyJsonReader"
+                    },
+                    "customConfigs": [],
+                    "expanded": true
+                }
+            ]
+        }
+    ]
+}

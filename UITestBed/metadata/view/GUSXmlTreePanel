@@ -1,0 +1,84 @@
+{
+    "id": "ExtBox1-ext-gen131035",
+    "type": "treepanel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "id": "gusxmltreepanel",
+        "width": 150,
+        "title": "GUS XML Tree Panel",
+        "hideHeaders": true,
+        "store": "GUSXmlTreeStore",
+        "designer|userClassName": "GUSXmlTreePanel",
+        "designer|userAlias": "gusxmltreepanel"
+    },
+    "customConfigs": [],
+    "designerId": "35fa4a58-0741-4a30-81af-11b8d6d079af",
+    "$viewOrder": 4,
+    "expanded": true,
+    "cn": [
+        {
+            "id": "ExtBox1-ext-gen131054",
+            "type": "treeview",
+            "reference": {
+                "name": "viewConfig",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyTreeView"
+            },
+            "customConfigs": [],
+            "expanded": true
+        },
+        {
+            "id": "ExtBox1-ext-gen8169",
+            "type": "treecolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "id": "treeColumn",
+                "dataIndex": "label",
+                "flex": 1,
+                "text": null,
+                "designer|userClassName": "MyTreeColumn"
+            },
+            "customConfigs": [],
+            "expanded": true,
+            "cn": [
+                {
+                    "id": "ExtBox1-ext-gen9590",
+                    "type": "fixedfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "renderer",
+                        "designer|params": [
+                            "value",
+                            "metaData",
+                            "record",
+                            "rowIndex",
+                            "colIndex",
+                            "store",
+                            "view"
+                        ],
+                        "implHandler": "return unescape(value);",
+                        "designer|userClassName": "renderer"
+                    },
+                    "customConfigs": [],
+                    "iconCls": "icon-basic-function",
+                    "expanded": true
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uses>
+	<user>
+		<id>1</id>
+		<name>Ed Spencer</name>
+		<email>ed@sencha.com</email>
+	</user>
+	<user>
+		<id>2</id>
+		<name>Abe Elias</name>
+		<email>abe@sencha.com</email>
+	</user>
+</uses>

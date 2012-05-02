@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<explorer xmlns:wicket="http://wicket.sourceforge.net/">
+	<guidelineSets>
+		<guidelineSet nodeid="AA692AD8-69FD-8091-7761-09919E19A656" selected="true" versionid="E1877D78-B223-1846-DBEF-8D770161CB5E">Acute%20Myeloid%20Leukemia</guidelineSet>
+		<guidelineSet nodeid="6CD0B3DD-4FD8-7CAC-33EB-BEE8B07A077C" selected="false" versionid="77D36F1D-A042-2256-0909-2427AE7D7B21">Anal%20Carcinoma</guidelineSet>
+		<guidelineSet nodeid="1E026470-85E7-A106-D21F-712D4FEE8AB8" selected="false" versionid="9B35FA3A-4C48-3B4F-492D-8C26AB445F5E">Bone%20Cancer</guidelineSet>
+		<guidelineSet nodeid="40B189AC-3D8E-3D65-D786-A871B8D78DA1" selected="false" versionid="7683949C-734B-4150-5EA5-6A50F3985DF5">Breast%20Cancer</guidelineSet>
+		<guidelineSet nodeid="F746A936-10B6-670C-96A5-4D63165A29CE" selected="false" versionid="B7769DAD-0D40-6C21-CF78-B56C4D892374">Cancer-%20and%20Chemotherapy-%20Induced%20Anemia</guidelineSet>
+		<guidelineSet nodeid="2088658A-7D9A-E3A0-10A7-E1E19E111834" selected="false" versionid="03954D42-9524-C383-5A20-506A714D15B9">Central%20Nervous%20System%20Cancers</guidelineSet>
+		<guidelineSet nodeid="A3C571A0-CEF1-6F4C-EBC8-41541C133EC3" selected="false" versionid="F43DF9E8-3084-D97E-DD26-2B10119D615E">Chronic%20Myelogenous%20Leukemia</guidelineSet>
+		<guidelineSet nodeid="642C2FFD-587C-B8B9-6967-E6D3290FA125" selected="false" versionid="7A26C133-B443-5CFB-AFB3-B7FAA0D8508A">Colon%20Cancer</guidelineSet>
+		<guidelineSet nodeid="6864745B-30ED-FAA8-D866-B56A5E598110" selected="false" versionid="D66699AB-3A06-5935-6E53-338106D39CC9">Feng%20Test%20Guideline%20Set</guidelineSet>
+		<guidelineSet nodeid="459A0838-DA80-69BD-6F24-1BC790A22659" selected="false" versionid="A619B51B-F5D0-2710-067B-5FEBD3F21B7E">Multiple%20Myeloma</guidelineSet>
+		<guidelineSet nodeid="3BD69BA2-8F31-6266-845E-1CFE47336FDA" selected="false" versionid="D336484E-6B59-733F-1252-AD39D52A8754">Myelodysplastic%20Syndromes</guidelineSet>
+		<guidelineSet nodeid="066A44BA-1D4F-16EA-C523-9D43AB88A684" selected="false" versionid="74C80466-E518-6391-82C8-8727CB8478DD">netbeans7</guidelineSet>
+		<guidelineSet nodeid="ABAC3E14-1EBD-B460-1651-EB341BC14BC7" selected="false" versionid="CAF9CF9F-AB0A-FB1E-F647-433888D45EE9">Non-Hodgkin%27s%20Lymphomas</guidelineSet>
+		<guidelineSet nodeid="9CA62955-EF5D-2B91-D5A7-7E46E2C54077" selected="false" versionid="CDEFAF4C-D4AF-6699-3789-E49AF9F58024">Ovarian%20Guideline%20Set%20</guidelineSet>
+		<guidelineSet nodeid="361D8C13-11AC-63B3-D64C-A95D14AFAE75" selected="false" versionid="BCF61330-2065-FF5D-A071-3617BCF9E555">QA_Test%20001</guidelineSet>
+		<guidelineSet nodeid="842FF852-0F31-E716-098B-30BBD80D6B9C" selected="false" versionid="A1BF7D48-207D-584C-89ED-78422870609A">Systemic%20Light%20Chain%20Amyloidosis</guidelineSet>
+		<guidelineSet nodeid="D5E506E8-B240-47F8-8644-A0F5FC1F8793" selected="false" versionid="B60FA5B9-325D-0A6B-1C62-6A5AB8EE1720">Waldenstr%C3%B6m%27s%20Macroglobulinemia%2FLymphoplasmacytic%20Lymphoma</guidelineSet>
+	</guidelineSets>
+	<node label="Acute%20Myeloid%20Leukemia" type="GUIDELINE" nodeid="F4F85BCF-EB5A-32AC-3926-8FDB31B89419" selected="true" version="2.28" seqnum="" year="2011" versionid="D4E08C31-6019-6816-5A00-1A48519AB2C6">
+		<node label="Panel%20Members" srcnodeid="B65BF2DC-F006-CA3B-6EE3-9340DD777179" type="GUIDELINE_SECTION" subtype="PATHWAY_SECTION" srcversid="1FC9BAF1-F638-8A20-D691-B473870FE0DD" nodeid="gls@467DDF5F-5C15-BE92-A204-22732AEE35A2" versionid="gls@469D948C-8CFE-3AD6-B811-58F16787FD6E" selected="false" version="2011.2.28" seqnum="">
+			<node label="NCCN%20Acute%20Myeloid%20Leukemia%20Panel%20Members" type="PHASE" nodeid="1A8128CF-68F0-9A93-AD57-7FBC03045795" versionid="F8AB9251-5E76-79A4-585A-CEAFB65F0058" selected="false"/>
+		</node>
+		<node label="Summary%20of%20the%20Guidelines%20Updates" srcnodeid="824AB26E-8401-19B3-A574-4C4528B02CE4" type="GUIDELINE_SECTION" subtype="PATHWAY_SECTION" srcversid="104E7321-8929-B5B5-FBCE-F0FF800C039C" nodeid="gls@D490A554-AD8A-C7E1-BCFB-85A93821DF10" versionid="gls@C181C794-26D1-9288-7988-7EE0150CAEDF" selected="false" version="2011.2.28" seqnum="">
+			<node label="Summary%20of%20the%20Guidelines%20Updates" type="PHASE" nodeid="C67A61A2-102B-0CC1-9FE2-F9CE2F8AD37B" versionid="1E8A921A-FCF5-CD6A-F2EE-9238C03032F9" selected="false"/>
+		</node>
+		<node label="Acute%20leukemia%20or%20chloroma" srcnodeid="176949B0-65D8-74F5-2DC4-C34FD7913223" type="GUIDELINE_SECTION" subtype="PATHWAY_SECTION" srcversid="E3403F8F-BACE-B463-6143-DAAA194681EC" nodeid="gls@87B390D0-1A28-F5DA-5452-65245C0B1944" versionid="gls@97E0F681-8CC0-C748-285F-FD5225A64575" selected="false" version="2011.2.28" seqnum="">
+			<node label="Diagnosis" type="PHASE" nodeid="CAC34F29-F02D-91E6-8FE4-BDA085DBF48F" versionid="EBFCE21A-8D1B-D631-B3A5-E06285E1E7EA" selected="false"/>
+			<node label="Workup" type="PHASE" nodeid="67FBB7DE-6365-363A-FDD7-64DEEA0D86FA" versionid="79C50A3E-B8C5-3BCF-03C9-673D799365BA" selected="false"/>
+			<node label="Classification%2FStain%20Analysis" type="PHASE" nodeid="80DD4FED-A868-0B1F-9DCC-1925F393047D" versionid="C1F535DD-E569-DD30-C60D-7BAB7A4E869E" selected="false"/>
+		</node>
+		<node label="Acute%20promyelocytic%20leukemia%20%28APL%29%20" srcnodeid="CDC2BC37-AB2F-C4D0-4328-FA5B12913785" type="GUIDELINE_SECTION" subtype="PATHWAY_SECTION" srcversid="89FEB798-A7BC-98F5-B996-FB8A04F3ED1C" nodeid="gls@A41A7F2B-6067-346A-FCD2-DC28D7535824" versionid="gls@2C3CA4FA-3F94-BD04-481F-88EEB158C1FF" selected="false" version="2011.2.28" seqnum="">
+			<node label="Classification" type="PHASE" nodeid="C0CC91DF-18FE-6EAB-9D94-DD909DDC139F" versionid="BE450086-F4BE-733A-EAC8-6D8A8469DD97" selected="false"/>
+			<node label="Treatment%20Induction" type="PHASE" nodeid="957BE655-28AD-E5C1-B20A-4E4883F6641B" versionid="BBDA88CF-DF04-9883-3917-D8C91081EFC4" selected="false"/>
+			<node label="Consolidation%20Therapy" type="PHASE" nodeid="756881E0-349F-365E-77DA-D3C9D31D941E" versionid="2D105790-155A-0E49-759F-3019A9B5D4BB" selected="false"/>
+			<node label="Post-%20Consolidation%20Evaluation" type="PHASE" nodeid="365D1570-D347-AD1B-09C2-831B54B04147" versionid="4E2637E3-FD72-D799-080A-63D44309CF97" selected="false"/>
+			<node label="Post-Consolidation%20Therapy" type="PHASE" nodeid="8169162A-1E87-6638-2828-9426647B547D" versionid="8A80E845-2D85-9513-3D6A-5646C3E0C33F" selected="false"/>
+			<node label="Monitoring" type="PHASE" nodeid="38F86188-4904-CA8F-719C-EB12A65EB77E" versionid="40EB53C8-5A2A-A5BE-BAFB-7D65540DD403" selected="false"/>
+			<node label="Relapse" type="PHASE" nodeid="CC770FF5-C66D-694C-6E21-D27325A1F42D" versionid="C2CF20B8-DBDC-70F0-FD03-8C9D85447D97" selected="false"/>
+			<node label="Postremission%20Therapy" type="PHASE" nodeid="28D082CA-1CF4-5C1F-12EE-E75A5D17C3D5" versionid="AF322084-F032-F436-B6A6-19AE070555C0" selected="false"/>
+			<node label="Additional%20Therapy" type="PHASE" nodeid="74EAAB0A-F270-B1E2-F430-51D5D722D235" versionid="F03F1FFE-414F-85A7-898C-0346F00F3F49" selected="false"/>
+		</node>
+		<node label="Acute%20myeloid%20leukemia%20%28AML%29%20Age%20less%20than%2060%20years" srcnodeid="DF941E39-4CD7-5256-B223-12EC63A31A6A" type="GUIDELINE_SECTION" subtype="PATHWAY_SECTION" srcversid="78324A87-F189-2566-CB1C-2C6BA9463BF5" nodeid="gls@5EB550AC-3FDD-A6A3-8A55-52D6548332E2" versionid="gls@767F4824-4D84-977E-A374-09463DB87127" selected="false" version="2011.2.28" seqnum="">
+			<node label="Classification%C2%A0" type="PHASE" nodeid="04C17BBD-D7B0-7680-AB63-E1813B79AC85" versionid="012A4532-3314-BC6B-EFF7-9F825DBFAFD3" selected="false"/>
+			<node label="Treatment%20Induction" type="PHASE" nodeid="428E760C-33DF-8C27-81DC-9205AA5EBD62" versionid="4A84694C-80A2-2BFD-0867-98A59AC6A019" selected="false"/>
+			<node label="Post-Induction%20Evaluation" type="PHASE" nodeid="A80D36AE-D987-8E56-5884-CAE8B6007E48" versionid="E53FD82F-FB63-1B03-13F2-21CC8837AD70" selected="false"/>
+			<node label="Post-Induction%20Therapy" type="PHASE" nodeid="31C4747E-5A2D-56A5-E5AC-0E1DD52AB718" versionid="B94E9AF3-5BF7-504C-EDD7-A7791CE3CAB8" selected="false"/>
+			<node label="Remission%20Evaluation" type="PHASE" nodeid="37DC5E33-A46D-FEA6-26C4-621416CEDD2B" versionid="0BD22A4C-CF79-C1DA-906A-92E48EFA2E83" selected="false"/>
+			<node label="Postremission%20Risk%20Evaluation" type="PHASE" nodeid="99F53380-6E21-E275-88F5-41E3CD03D616" versionid="EEC721EB-5EAF-F867-ED70-F2BBA8E9AF97" selected="false"/>
+			<node label="Consolidation%20Therapy%C2%A0" type="PHASE" nodeid="15251C98-434D-B208-F3D6-977371D39515" versionid="9BE83B13-6745-3A2D-94C7-AF2F35758FA8" selected="false"/>
+		</node>
+		<node label="Acute%20myeloid%20leukemia%20%28AML%29%20Age%20greater%20than%20or%20equal%20to%2060%20years" srcnodeid="49F4A2EE-C997-BE34-5A44-F784869C404F" type="GUIDELINE_SECTION" subtype="PATHWAY_SECTION" srcversid="1C3B787C-EE55-D4B8-C231-1AC8BC7912E0" nodeid="gls@5EC0D2FE-3BD2-5A98-8FA5-3E0316BD6166" versionid="gls@B032CDBE-07D2-A31F-5B19-1E32A5A5B0B4" selected="false" version="2011.2.28" seqnum="">
+			<node label="Classification" type="PHASE" nodeid="A38D6813-FD95-30A4-6520-2F454D3DFE6C" versionid="B7B5C6CD-B4A0-03BF-9745-BF52679260FD" selected="false"/>
+			<node label="Treatment%20Induction" type="PHASE" nodeid="B3D5FE31-66C7-44A1-3887-AD9B2AA9DADA" versionid="AEE4305D-8C30-C43D-6FCF-947C0607EE47" selected="false"/>
+			<node label="Post-Induction%20Evaluation" type="PHASE" nodeid="F301E722-1848-07A6-02A8-9ABE1A72B4A6" versionid="707A28EF-466B-9A6A-842D-CBEADFAFEF26" selected="false"/>
+			<node label="Post-Induction%20Therapy" type="PHASE" nodeid="B320E650-F742-2640-8AE8-1A73A084C19D" versionid="E38EDBAC-E1A3-3F32-810B-D55F9CB11683" selected="false"/>
+			<node label="Remission%20Evaluation" type="PHASE" nodeid="125B9917-C652-B619-7CE9-0ADEB3149BF7" versionid="4F1E2522-BD22-3A63-EBD4-F6209D68662D" selected="false"/>
+			<node label="Consolidation%20Therapy" type="PHASE" nodeid="73FC13E4-CF17-E6E1-ADD3-17EE497BF7A9" versionid="0096DE1D-A4A1-8F2D-5D74-E9AE1438CA41" selected="false"/>
+		</node>
+		<node label="AML%20Surveillance" srcnodeid="5CB97FDA-781A-D1C5-3374-524CEC52F7F1" type="GUIDELINE_SECTION" subtype="PATHWAY_SECTION" srcversid="82530D78-346E-CA7B-1973-DE6093391F4D" nodeid="gls@65460573-1252-6511-0895-11B69ED9AE96" versionid="gls@7CE59608-3983-0CC8-8434-2AA2D75A5D5E" selected="false" version="2011.2.28" seqnum="">
+			<node label="Surveillance%20%28after%20completion%20of%20consolidation%29" type="PHASE" nodeid="FDECC42F-3154-F563-DF59-B6FE3547F459" versionid="4C301A8A-0D3C-841C-D489-B62C210109AD" selected="false"/>
+		</node>
+		<node label="AML%20Relapse%20and%20Salvage%20Therapy" srcnodeid="A48BC225-295B-04AF-83D2-33D06D473C58" type="GUIDELINE_SECTION" subtype="PATHWAY_SECTION" srcversid="819E1086-6DC1-DE10-7258-38345EE6CCD6" nodeid="gls@925AFB23-ED19-6DE0-D3C8-FA2BCCB85BAF" versionid="gls@5757B987-0F99-2640-C5B6-20BFA1AC9E30" selected="false" version="2011.2.28" seqnum="">
+			<node label="AML%20Relapse" type="PHASE" nodeid="E0089DF7-02AC-ECE7-6C33-B5F1560E6031" versionid="7B865131-B669-5271-7163-BBFCF3BC1CD3" selected="false"/>
+			<node label="Salvage%20Therapy%C2%A0" type="PHASE" nodeid="43C4A3EF-446D-09C5-5524-DCA23FAAE656" versionid="28C27A98-D330-849E-DBB9-A375D9EB13CE" selected="false"/>
+		</node>
+		<node label="Risk%20Status%20Based%20on%20Cytogenetics%20and%20Molecular%20Abnormalities%20" srcnodeid="2DBAB46A-9850-25FD-7A51-26965E9A71B1" type="GUIDELINE_SECTION" subtype="DOCUMENT_SECTION" srcversid="F0539AEA-5B1B-E168-E7D2-CBB6299CDBB3" nodeid="gls@92D5C8C8-F7FA-8CC7-CAAB-619C9740345E" versionid="gls@E0B40B58-E4F2-9EB9-0624-1CD056D5CCA5" selected="false" version="2011.2.28" seqnum=""/>
+		<node label="Evaluation%20and%20Treatment%20of%20CNS%20Leukemia" srcnodeid="818E22D5-5963-8DB4-9A5B-C93133CE9B63" type="GUIDELINE_SECTION" subtype="PATHWAY_SECTION" srcversid="B0BB5E23-E7D6-2986-382E-C6204938EB29" nodeid="gls@54F6B79B-56C7-19FD-3D15-B717622785AE" versionid="gls@E1BB6B50-BA7E-5461-7470-F5792BC09F89" selected="false" version="2011.2.28" seqnum="">
+			<node label="Evaluation%20of%20CNS%20Leukemia" type="PHASE" nodeid="EB87340D-BA90-2603-1EBF-BE7824BA4159" versionid="A29077A9-C406-3D19-8B42-E8D6756B9C6C" selected="false"/>
+			<node label="Treatment%20of%20CNS%20Leukemia" type="PHASE" nodeid="5C172520-A200-66BA-081C-3B939F946B18" versionid="3AC6EA5D-30B8-5106-E291-19B8B47C645F" selected="false"/>
+		</node>
+		<node label="Supportive%20Care%20" srcnodeid="C667247F-A171-D5E4-27A2-54996E7B560D" type="GUIDELINE_SECTION" subtype="PATHWAY_SECTION" srcversid="91E54BA6-2C67-BB2F-604E-546B90322E9B" nodeid="gls@1DB77846-7968-BA6A-7E80-726261A7AB6D" versionid="gls@4192F3CF-4644-F0C5-C54B-3D362A792F60" selected="false" version="2011.2.28" seqnum="">
+			<node label="General%20Supportive%20Care%20Principles" type="PHASE" nodeid="B931EA68-3C26-235E-DD63-2F95A7A7B564" versionid="4BBBBBFE-441D-726C-4AB5-95A762471C56" selected="false"/>
+			<node label="APL%20Supportive%20Care" type="PHASE" nodeid="4CB3C230-065E-A749-DEAE-FB89C11A19CE" versionid="5A36F8C8-916E-D11E-496A-A7FB57F743FD" selected="false"/>
+		</node>
+		<node label="Response%20Criteria%20for%20Acute%20Myeloid%20Leukemia" srcnodeid="D6D1C04B-F53E-5C5A-E22F-1A377DB2C415" type="GUIDELINE_SECTION" subtype="PATHWAY_SECTION" srcversid="6B39F418-2E12-4682-7C24-5A6E40F6F914" nodeid="gls@61A05CC0-1ECC-45DC-1CB1-B32A9F017248" versionid="gls@4D76D013-48CD-FF24-1E99-E239F308F924" selected="false" version="2011.2.28" seqnum="">
+			<node label="Response%20Criteria%20for%20Acute%20Myeloid%20Leukemia" type="PHASE" nodeid="16954523-4CB9-8FAA-238F-392B8FDCC619" versionid="2330E073-2DB9-7B7E-AA42-CDA4B9E4D321" selected="false"/>
+		</node>
+		<node label="Monitoring%20During%20Therapy" srcnodeid="91F218C4-29B7-9A3A-4A05-65F4D6B9B1EC" type="GUIDELINE_SECTION" subtype="PATHWAY_SECTION" srcversid="0D114328-37AE-1295-8A3B-7D3BC3D5E0E8" nodeid="gls@48C1494E-BBA9-0FEE-52F2-8500661C2D62" versionid="gls@C90E5D98-2FA4-C40C-A00D-336FF99F44AE" selected="false" version="2011.2.28" seqnum="">
+			<node label="Monitoring%20During%20Induction%20Therapy%20%C2%A0" type="PHASE" nodeid="FA2D9695-4AD2-A29C-E337-CB170BC37994" versionid="24CF60E9-E21F-1596-7072-D61B29198C8F" selected="false"/>
+			<node label="Monitoring%20During%20Post-Remission%20Therapy" type="PHASE" nodeid="9130F0A7-C5A2-05CC-5258-F32EA778510A" versionid="16D5C8FB-842C-8260-1521-9A9740FBED3F" selected="false"/>
+		</node>
+		<node label="Salvage%20Chemotherapy%20Regimen%20Options" srcnodeid="8DC4A9E2-6BC4-8E0B-2194-3B31C146C92F" type="GUIDELINE_SECTION" subtype="PATHWAY_SECTION" srcversid="BEDCE238-F008-F466-DD1B-90E47CE51FB8" nodeid="gls@537164A4-C10E-69AC-5192-EF6B1AF05337" versionid="gls@F3D01E72-4B8E-E649-2B86-8860ED134827" selected="false" version="2011.2.28" seqnum="">
+			<node label="Salvage%20Chemotherapy%20Regimen%20Options" type="PHASE" nodeid="ADF9152C-717B-CA20-680A-A9F4B97F2517" versionid="A01F1BD2-277D-E205-BCC0-4A6798E18CAB" selected="false"/>
+		</node>
+		<node label="NCCN%20Categories%20of%20Consensus%20and%20Evidence" srcnodeid="761381DF-645E-AADB-B78A-5FE8D1DE6A16" type="GUIDELINE_SECTION" subtype="PATHWAY_SECTION" srcversid="BF52A234-4B32-A21A-9BCE-A9A50A320DA0" nodeid="gls@3B09BEE2-D35B-7891-B2F6-78C5F5A00FEA" versionid="gls@93FCECF9-0021-2260-6B56-31A400508C75" selected="false" version="2011.2.28" seqnum="">
+			<node label="NCCN%20Categories%20of%20Evidence%20and%20Consensus" type="PHASE" nodeid="DF523153-CE1C-C0ED-433A-096030EB3CF4" versionid="AD47189A-F1CB-293E-215E-E7EB9C072745" selected="false"/>
+		</node>
+		<node label="Discussion" srcnodeid="D3940E33-E06D-391C-6ACA-6B92EA8FE12A" type="GUIDELINE_SECTION" subtype="DOCUMENT_SECTION" srcversid="67335294-C57D-303F-C018-6988501A555E" nodeid="gls@8631F182-AC74-EB29-9057-CC124BDB6517" versionid="gls@2D13BD97-9734-D54C-8916-3532B4BEFC8C" selected="false" version="2011.2.28" seqnum=""/>
+	</node>
+</explorer>

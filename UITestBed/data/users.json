@@ -1,0 +1,14 @@
+{
+    "user": [
+      {
+        "id": "1",
+        "name": "Ed Spencer",
+        "email": "ed@sencha.com"
+      },
+      {
+        "id": "2",
+        "name": "Abe Elias",
+        "email": "abe@sencha.com"
+      }
+    ]
+}

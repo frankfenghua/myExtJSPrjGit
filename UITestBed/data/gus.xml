@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<explorer >
+	<node label="%20Feng%20Guideline%20" type="GUIDELINE" nodeid="9740015D-3447-1CC6-949E-C91D0876F8D1" selected="true" version="0.34" seqnum="" year="2012" versionid="D956A51D-A9A8-8398-B191-79A44A97D75F">
+	</node>
+	<node label="changed-K" type="GUIDELINE" nodeid="A769E48F-6742-FCDC-5F8E-DF081CC29E87" selected="false" version="0.34" seqnum="" year="2012" versionid="6350BC6F-1513-2C54-A65E-F22897C8A011">
+	</node>
+	<node label="empty%20guideline" type="GUIDELINE" nodeid="38A1F470-3359-6C66-DC94-B8B4ED2ACD5C" selected="false" version="0.0" seqnum="" year="2012" versionid="B37C23D5-10D0-003A-5704-1D87A94416A0"/>
+	<node label="Feng%20Guideline%202" type="GUIDELINE" nodeid="DA9BAD6C-8A5C-8F60-0838-9954CA05797A" selected="false" version="0.25" seqnum="" year="2012" versionid="58BDDC18-3367-E271-0302-31F2EEF73663"/>
+	<node label="file%20link%20test%20guideline" type="GUIDELINE" nodeid="C1F309B4-DD7E-90DD-0EB6-6174020F23B6" selected="false" version="0.5" seqnum="" year="2012" versionid="0C19E73A-3358-8B75-416D-6AE2A99E5528">
+	</node>
+	<node label="GUS-1023%20Guideline" type="GUIDELINE" nodeid="379B64BF-B46B-1B1E-D11E-230B4F778EE0" selected="false" version="0.0" seqnum="" year="2012" versionid="54D928E8-703C-CF56-904E-8B75B7D06F5E">
+	</node>
+	<node label="long%20name%20Guideline" type="GUIDELINE" nodeid="6AC24513-0813-046B-11AA-F871F420FF6E" selected="false" version="0.2" seqnum="" year="2012" versionid="E0BC7228-AA9D-BEFD-C8AC-1584289558E7">
+	</node>
+</explorer>
