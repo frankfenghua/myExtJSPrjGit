@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>
+        Manage Menu
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="http://dev.sencha.com/deploy/ext-3.4.0/resources/css/ext-all.css" rel="stylesheet"/>
+    <script src="http://dev.sencha.com/deploy/ext-3.4.0/adapter/ext/ext-base.js"></script>
+    <script src="http://dev.sencha.com/deploy/ext-3.4.0/ext-all.js"></script>
+    <link href="http://dev.sencha.com/deploy/ext-3.4.0/examples/tree/xml-tree-loader.css"/>
+    <script src="http://dev.sencha.com/deploy/ext-3.4.0/examples/ux/XmlTreeLoader.js"></script>
+    <script>
+        //Excellent function that converts tree data into json
+        function getJson(treeNode) {
+            treeNode.expandChildNodes();
+            var json = {};
+            var attributes = treeNode.attributes;
+            for(var item in attributes){
+                if (item == 'src' || item == 'text' || item == 'allowDrop' || item == 'allowDrag') { //get only required attributes
+                    json[item] = attributes[item];
+                }
+            }
+            json.children = [];
+            if(treeNode.childNodes.length > 0){
+                for (var i=0; i < treeNode.childNodes.length; i++) {
+                    json.children.push(getJson(treeNode.childNodes[i]));
+                }
+                json.leaf = false;
+            } else {
+                json.leaf = true;
+            }
+            return json;
+        }
+        //
+        // Extend the XmlTreeLoader to set some custom TreeNode attributes specific to our application:
+        //
+        Ext.app.CustomTreeLoader = Ext.extend(Ext.ux.tree.XmlTreeLoader, {
+            processAttributes : function(attr){
+                // Set the node text that will show in the tree since our raw data does not include a text attribute:
+                attr.text = attr.title;
+                if(attr.src == 'javascript:void(0);'){ // Does the node has child?
+                    // Override these values for our folder nodes because we are loading all data at once.  If we were
+                    // loading each node asynchronously (the default) we would not want to do this:
+                    attr.loaded = true;
+                    attr.expanded = true;
+                }
+                else { // is it a leaf node?
+                    // Tell the tree this is a leaf node.  This could also be passed as an attribute in the original XML,
+                    // but this example demonstrates that you can control this even when you cannot dictate the format of
+                    // the incoming source XML:
+                    attr.leaf = true;
+                }
+            },
+            requestMethod: 'GET'
+        });
+        Ext.onReady(function(){
+
+            var detailsText = '<i>Select a tree item to see more information...</i>';
+            var tpl = new Ext.Template(
+                    '<h2 class="title"><b>title</b>: {title}</h2>',
+                    '<p><b>id</b>: {id}</p>',
+                    '<p><b>leaf</b>: {leaf}</p>',
+                    '<p><b>src</b>: {src}</p>',
+                    '<p><b>tagName</b>: {tagName}</p>',
+                    '<p><b>text</b>: {text}</p>'
+            );
+            tpl.compile();
+
+            new Ext.Panel({
+                title: 'Menu',
+                renderTo: 'menuTree',
+                layout: 'border',
+                width: 500,
+                height: 500,
+                items: [{
+                    xtype: 'treepanel',
+                    id: 'tree-panel',
+                    region: 'center',
+                    margins: '2 2 0 2',
+                    height: 220,
+                    autoScroll: true,
+                    rootVisible: false,
+                    enableDD: true,
+                    viewConfig: {
+                        plugins: [{
+                            ptype: 'treeviewdragdrop'
+                        }]
+                    },
+                    root: new Ext.tree.AsyncTreeNode(),
+                    loader: new Ext.app.CustomTreeLoader({
+                        dataUrl:'menu.xml'  //load your xml file
+                    }),
+                    listeners: {
+                        'render': function(tp){
+                            tp.getSelectionModel().on('selectionchange', function(tree, node){
+                                var el = Ext.getCmp('details-panel').body;
+                                tpl.overwrite(el, node.attributes);
+                                console.log("node.attributes.id = " + node.attributes.id );
+                                console.log("node.attributes.leaf = " + node.attributes.leaf );
+                                console.log("node.attributes.src = " + node.attributes.src );
+                                console.log("node.attributes.tagName = " + node.attributes.tagName );
+                                console.log("node.attributes.text = " + node.attributes.text );
+                                console.log("node.attributes.title = " + node.attributes.title );
+                            })
+                        }
+                    }
+                },{
+                    region: 'south',
+                    title: 'Menu Details',
+                    id: 'details-panel',
+                    autoScroll: true,
+                    collapsible: true,
+                    split: true,
+                    margins: '0 2 2 2',
+                    cmargins: '2 2 2 2',
+                    height: 220,
+                    html: detailsText
+                }
+                ]
+            });
+        });
+        function savechanges(){
+            var myTree = Ext.getCmp('tree-panel');
+            var json = getJson(myTree.getRootNode());
+            console.log(Ext.encode(json.children)); //serialize json data into string so we can send back to server
+        }
+    </script>
+</head>
+<body>
+<div id="menuTree"></div>
+</body>
+</html>

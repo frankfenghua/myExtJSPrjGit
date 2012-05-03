@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu src="root" title="root" id="0">
+    <!-- Home -->
+    <menu src="/page.htm2" title="Home"></menu>
+    <menu title="Clients" src="javascript:void(0);">
+        <menu src="/page1.html" title="Bank Management"></menu>
+        <menu src="/page2.html" title="Client Management"></menu>
+        <menu src="javascript:void(0);" title="Updates">
+            <menu src="/page2.html" title="View Updates"></menu>
+            <menu src="/page3.html" title="Report Bug"></menu>
+        </menu>
+    </menu>
+    <!--  Ends -->
+</menu>
