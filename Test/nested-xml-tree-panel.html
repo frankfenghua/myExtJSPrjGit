@@ -4,16 +4,24 @@
     <title>
         Manage Menu
     </title>
+<!--
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link href="http://dev.sencha.com/deploy/ext-3.4.0/resources/css/ext-all.css" rel="stylesheet"/>
     <script src="http://dev.sencha.com/deploy/ext-3.4.0/adapter/ext/ext-base.js"></script>
     <script src="http://dev.sencha.com/deploy/ext-3.4.0/ext-all.js"></script>
     <link href="http://dev.sencha.com/deploy/ext-3.4.0/examples/tree/xml-tree-loader.css"/>
     <script src="http://dev.sencha.com/deploy/ext-3.4.0/examples/ux/XmlTreeLoader.js"></script>
+-->
+    <link href="ext-3.4.0/resources/css/ext-all.css" rel="stylesheet"/>
+    <script src="ext-3.4.0/adapter/ext/ext-base-debug.js"></script>
+    <script src="ext-3.4.0/ext-all-debug-w-comments.js"></script>
+    <link href="ext-3.4.0/examples/tree/xml-tree-loader.css"/>
+    <script src="ext-3.4.0/examples/ux/XmlTreeLoader.js"></script>
+
     <script>
         //Excellent function that converts tree data into json
         function getJson(treeNode) {
-            treeNode.expandChildNodes();
+//            treeNode.expandChildNodes();
             var json = {};
             var attributes = treeNode.attributes;
             for(var item in attributes){
