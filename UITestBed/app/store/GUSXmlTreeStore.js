@@ -16,7 +16,8 @@
 Ext.define('MyApp.store.GUSXmlTreeStore', {
     extend: 'Ext.data.TreeStore',
     requires: [
-        'MyApp.model.GUSXmlTreeModel'
+        'MyApp.model.GUSXmlTreeModel',
+        'MyApp.overrides.CustomXmlReader'
     ],
 
     constructor: function(cfg) {
@@ -36,7 +37,8 @@ Ext.define('MyApp.store.GUSXmlTreeStore', {
                 url: 'data/gus_org.xml',
 //                url: 'data/gus_full.xml',
                 reader: {
-                    type: 'xml',
+//                    type: 'xml',
+                    type: 'customXmlReader',
                     root: 'explorer',
                     record: 'node'
                 }
