@@ -37,8 +37,7 @@ Ext.define('MyApp.store.GUSXmlTreeStore', {
                 url: 'data/gus_org.xml',
 //                url: 'data/gus_full.xml',
                 reader: {
-//                    type: 'xml',
-                    type: 'customXmlReader',
+                    type: 'xml',
                     root: 'explorer',
                     record: 'node'
                 }
