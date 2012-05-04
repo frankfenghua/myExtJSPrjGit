@@ -24,12 +24,24 @@ Ext.define('MyApp.controller.GUSXmlTreepanelController', {
         {
             ref: 'UserGridPanel',
             selector: '#usergridpanel'
+        },
+        {
+            ref: 'ExplorerTreePanel',
+            selector: '#explorertreepanel'
         }
     ],
 
     onTreepanelSelectionChange: function(tablepanel, selections, options) {
         if(selections[0] && selections[0].data ){
             this.getUserGridPanel().down('#bottom').update(selections[0].data);
+//            var node = this.getGUSXmlTreePanel().getStore().getRootNode().data;
+            var node = this.getGUSXmlTreePanel().getStore().getRootNode();
+            var json = this.getJsonByXml(node);
+            console.log('json = ' + Ext.encode(json.children)); //serialize json data into string so we can send back to server
+
+            if(json){
+//                this.getExplorerTreePanel().getStore().load(json);
+            }
         }
     },
 
@@ -40,6 +52,37 @@ Ext.define('MyApp.controller.GUSXmlTreepanelController', {
             }
         });
 
+    },
+    /**
+     * Excellent function that converts tree data into json
+     */
+    getJsonByXml:function(treeNode) {
+//        treeNode.expandChildNodes();
+        var json = {};
+//        json.record = [] ;
+
+        var data = treeNode.data;
+        for(var item in data){
+            if (item == 'label' || item == 'type' || item == 'nodeid' ||
+                item == 'selected' || item == 'version' || item == 'seqnum' || item == 'year' ||
+                item == 'versionid'
+                )
+            { //get only required attributes
+                json[item] = data[item];
+            }
+        }
+
+        json.children = [];
+        if(treeNode.childNodes.length > 0){
+            for (var i=0; i < treeNode.childNodes.length; i++) {
+                json.children.push(this.getJsonByXml(treeNode.childNodes[i]));
+            }
+            json.leaf = false;
+        } else {
+            json.leaf = true;
+        }
+//        json.record.push(json);
+        return json;
     }
 
 });

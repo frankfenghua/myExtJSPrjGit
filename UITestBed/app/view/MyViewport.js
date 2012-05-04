@@ -35,6 +35,8 @@ Ext.define('MyApp.view.MyViewport', {
                     xtype: 'explorertreepanel',
                     collapsible: true,
                     store: 'NodesXmlTreeStore',
+//                    store: 'MenuXmlTreeStore',
+//                    store: 'GUSJsonStore',
                     region: 'east',
                     split: true
                 },

@@ -37,7 +37,7 @@ If you are unsure which license is appropriate for your use, please contact the 
     for (i = 0, ln = scripts.length; i < ln; i++) {
         scriptSrc = scripts[i].src;
 
-        match = scriptSrc.match(/bootstrap\.js$/);
+        match = scriptSrc.match(/mybootstrap\.js$/);
 
         if (match) {
             path = scriptSrc.substring(0, scriptSrc.length - match[0].length);

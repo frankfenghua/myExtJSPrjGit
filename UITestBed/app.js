@@ -24,13 +24,15 @@ Ext.Loader.setConfig({
 });
 
 Ext.require([
-    'MyApp.store.CarDataJson',
-    'MyApp.store.XmlStore',
+//    'MyApp.store.CarDataJson',
+//    'MyApp.store.XmlStore',
     'MyApp.store.UserXmlTreeStore' ,
-    'MyApp.store.UserJsonStore',
+//    'MyApp.store.UserJsonStore',
+    'MyApp.store.GUSJsonStore',
     'MyApp.store.NodesXmlTreeStore',
-    'MyApp.store.UserTreeStore',
+//    'MyApp.store.UserTreeStore',
     'MyApp.store.GUSXmlTreeStore'
+//    'MyApp.store.MenuXmlTreeStore'
 ]);
 
 Ext.onReady(function(){
@@ -44,7 +46,9 @@ Ext.application({
         'UserModel',
         'MyUserModel',
         'NodeXmlModel',
-        'GUSXmlTreeModel'
+//        'MenuXmlModel',
+        'GUSXmlTreeModel',
+        'MyGUSJsonModel'
     ],
     stores: [
         'CarDataJson',
@@ -52,8 +56,10 @@ Ext.application({
         'UserXmlTreeStore',
         'UserJsonStore',
         'NodesXmlTreeStore',
+//        'MenuXmlTreeStore',
         'UserTreeStore',
-        'GUSXmlTreeStore'
+        'GUSXmlTreeStore',
+        'GUSJsonStore'
     ],
     views: [
         'MyViewport',
@@ -67,7 +73,7 @@ Ext.application({
     controllers: [
         'ExplorerController',
         'UserGridController',
-        'JsonUserController',
+//        'JsonUserController',
         'GUSXmlTreepanelController'
     ]
 });
