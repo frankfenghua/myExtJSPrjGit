@@ -46,12 +46,19 @@ Ext.define('MyApp.store.GUSXmlTreeStore', {
                 beforeexpand: {
                     fn: me.onXmltreestoreBeforeExpand,
                     scope: me
+                },
+                expand:{
+                    fn: me.onXmltreestoreExpand,
+                    scope: me
                 }
             }
         }, cfg)]);
     },
 
     onXmltreestoreBeforeExpand: function(treestore, options) {
-        console.log(Ext.getDisplayName(arguments.callee) + " :  treestore.data.label = " + treestore.data.label);
+        console.log("onXmltreestoreBeforeExpand()" + " :  treestore.data.label = " + treestore.data.label);
+    },
+    onXmltreestoreExpand: function(treestore, options) {
+        console.log("onXmltreestoreExpand()" + " :  treestore.data.label = " + treestore.data.label);
     }
 });
