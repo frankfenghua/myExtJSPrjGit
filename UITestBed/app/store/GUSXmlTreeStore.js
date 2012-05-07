@@ -54,6 +54,10 @@ Ext.define('MyApp.store.GUSXmlTreeStore', {
                 append:{
                     fn: me.onXmltreestoreAppend,
                     scope:me
+                },
+                load:{
+                    fn:me.onXmltreestoreLoad,
+                    scope:me
                 }
             }
         }, cfg)]);
@@ -93,5 +97,8 @@ Ext.define('MyApp.store.GUSXmlTreeStore', {
 //            newChildNode.set('iconCls', 'demo-userNodeIcon');
         }
 
+    },
+    onXmltreestoreLoad:function(thisNode,node,records,successful,eOpts){
+        console.log("onXmltreestoreLoad");
     }
 });
