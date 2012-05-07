@@ -16,9 +16,9 @@ Ext.define('MyApp.overrides.CustomXmlReader',{
             //</debug>
 
             if (recordName != root.nodeName) {
-                //root = Ext.DomQuery.select(recordName, root);
+                root = Ext.DomQuery.select(recordName, root);
                 //patch
-                root = Ext.DomQuery.select('>' + recordName, root);
+//                root = Ext.DomQuery.select('>' + recordName, root);
             } else {
                 root = [root];
             }
