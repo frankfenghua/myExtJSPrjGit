@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>XML to JavaScript object</title>
+<style>
+body { font-family: sans-serif; font-size: 90%; color: #333; background-color: #fff; }
+#output { font-family: monospace; padding: 2px 8px; background-color: #eee; border: 1px solid #666; }
+</style>
+</head>
+<body>
+
+<h1>XML to JavaScript Object</h1>
+
+<div id="output"></div>
+<div id="parsed"></div>
+
+<script type="text/javascript" src="jkl-debug.js"></script>
+<script type="text/javascript" src="jkl-dumper.js"></script>
+<script type="text/javascript" src="jkl-form.js"></script>
+<script type="text/javascript" src="jkl-parsexml.js"></script>
+<script><!--
+var url = "zip-e.xml";
+//var xml = new JKL.ParseXML( url );
+//var data = xml.parse();
+//document.write( data["items"]["item"]["us_state"] );
+//document.write( data.items.item.us_state );
+// ************************************************************************
+
+function load_text () {
+    var theform = new JKL.Form( "theform" );
+    var url = theform.getValue( "source" );
+    var http = new JKL.ParseXML.Text( url );
+    var text = http.parse();
+    document.getElementById( "xmlhere" ).innerHTML = escape_html( text );
+}
+
+// ************************************************************************
+
+function load_xml (url) {
+
+//    var theform = new JKL.Form( "theform" );
+//    var url = theform.getValue( "source" );
+//    var url = 'zip-e.xml';
+    var xml = new JKL.ParseXML( url, null );
+
+//    var mode = theform.getValue( "outarray" );
+    var mode= "auto";
+
+    switch ( mode ) {
+        case "all":
+            xml.setOutputArrayAll();
+            break;
+        case "auto":
+            xml.setOutputArrayAuto();
+            break;
+        case "never":
+            xml.setOutputArrayNever();
+            break;
+//        case "elem":
+//            var list = theform.getValue("elem_text").split( " " );
+//            xml.setOutputArrayElements( list );
+//            break;
+    }
+
+    var data = xml.parse();
+
+    var dumper = new JKL.Dumper();
+    var text = dumper.dump( data );
+    document.getElementById( "parsed" ).innerHTML = escape_html( text );
+}
+
+// ************************************************************************
+
+function escape_html ( text ) {
+    if ( typeof(text) == "undefined" ) return "";
+    return text.replace( /&/g, "&amp;" ).replace( /</g, "&lt;" ).replace( />/g, "&gt;" ).replace( /\n/g, "<br>\n" ).replace( / /g, "&nbsp;" );
+}
+
+// ************************************************************************
+
+function demo1 () {
+    var url = "http://www.kawa.net/works/js/jkl/example/zip-e.xml";
+    var xml = new JKL.ParseXML( url );
+    var data = xml.parse();
+    alert( "us_state: "+data.items.item.us_state );
+}
+
+// ************************************************************************
+
+function demo2 () {
+    var url = "http://www.kawa.net/works/ajax/zip/ajaxzip.cgi";
+    var query = "zip=1000001";
+    var xml = new JKL.ParseXML( url, query );
+    var data = xml.parse();
+    alert( "jcity: "+data.items.item.jcity );
+}
+
+// ************************************************************************
+
+function demo3 () {
+//    var url = "http://www.kawa.net/works/js/jkl/example/zip-e.xml";
+    var url = "http://localhost/js/myExtJSPrjGit/Test/zip-e.xml";
+    var xml = new JKL.ParseXML( url );
+    var func = function ( data ) {
+        alert( "us_dist: "+data.items.item.us_dist );
+    }
+    xml.async( func );
+    xml.parse();
+}
+// ************************************************************************
+
+function demo_text () {
+    var url = "parsexml-example/hello.txt";
+    var http = new JKL.ParseXML.Text( url );
+    var data = http.parse();
+    alert( "data: "+data );
+}
+
+
+load_xml('gus_full.xml');
+// --></script>
+
+</body>
+</html>
