@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<explorer xmlns:wicket="http://wicket.sourceforge.net/">
+    <guidelineSets>
+        <guidelineSet nodeid="AA692AD8-69FD-8091-7761-09919E19A656" selected="false" versionid="E1877D78-B223-1846-DBEF-8D770161CB5E">Acute%20Myeloid%20Leukemia</guidelineSet>
+        <guidelineSet nodeid="6CD0B3DD-4FD8-7CAC-33EB-BEE8B07A077C" selected="false" versionid="77D36F1D-A042-2256-0909-2427AE7D7B21">Anal%20Carcinoma</guidelineSet>
+        <guidelineSet nodeid="1E026470-85E7-A106-D21F-712D4FEE8AB8" selected="false" versionid="9B35FA3A-4C48-3B4F-492D-8C26AB445F5E">Bone%20Cancer</guidelineSet>
+        <guidelineSet nodeid="40B189AC-3D8E-3D65-D786-A871B8D78DA1" selected="false" versionid="7683949C-734B-4150-5EA5-6A50F3985DF5">Breast%20Cancer</guidelineSet>
+        <guidelineSet nodeid="F746A936-10B6-670C-96A5-4D63165A29CE" selected="false" versionid="B7769DAD-0D40-6C21-CF78-B56C4D892374">Cancer-%20and%20Chemotherapy-%20Induced%20Anemia</guidelineSet>
+        <guidelineSet nodeid="2088658A-7D9A-E3A0-10A7-E1E19E111834" selected="false" versionid="03954D42-9524-C383-5A20-506A714D15B9">Central%20Nervous%20System%20Cancers</guidelineSet>
+        <guidelineSet nodeid="A3C571A0-CEF1-6F4C-EBC8-41541C133EC3" selected="false" versionid="F43DF9E8-3084-D97E-DD26-2B10119D615E">Chronic%20Myelogenous%20Leukemia</guidelineSet>
+        <guidelineSet nodeid="642C2FFD-587C-B8B9-6967-E6D3290FA125" selected="false" versionid="7A26C133-B443-5CFB-AFB3-B7FAA0D8508A">Colon%20Cancer</guidelineSet>
+        <guidelineSet nodeid="6864745B-30ED-FAA8-D866-B56A5E598110" selected="false" versionid="D66699AB-3A06-5935-6E53-338106D39CC9">Feng%20Test%20Guideline%20Set</guidelineSet>
+        <guidelineSet nodeid="34F16B0D-8B4F-22B2-9F77-24AB7A461F12" selected="false" versionid="EEA96E56-9F69-7CD0-FE54-E119EE9EA621">GUS-1386-Sets</guidelineSet>
+        <guidelineSet nodeid="459A0838-DA80-69BD-6F24-1BC790A22659" selected="false" versionid="A619B51B-F5D0-2710-067B-5FEBD3F21B7E">Multiple%20Myeloma</guidelineSet>
+        <guidelineSet nodeid="3BD69BA2-8F31-6266-845E-1CFE47336FDA" selected="false" versionid="D336484E-6B59-733F-1252-AD39D52A8754">Myelodysplastic%20Syndromes</guidelineSet>
+        <guidelineSet nodeid="066A44BA-1D4F-16EA-C523-9D43AB88A684" selected="false" versionid="74C80466-E518-6391-82C8-8727CB8478DD">netbeans7</guidelineSet>
+        <guidelineSet nodeid="ABAC3E14-1EBD-B460-1651-EB341BC14BC7" selected="false" versionid="CAF9CF9F-AB0A-FB1E-F647-433888D45EE9">Non-Hodgkin%27s%20Lymphomas</guidelineSet>
+        <guidelineSet nodeid="9CA62955-EF5D-2B91-D5A7-7E46E2C54077" selected="false" versionid="CDEFAF4C-D4AF-6699-3789-E49AF9F58024">Ovarian%20Guideline%20Set%20</guidelineSet>
+        <guidelineSet nodeid="361D8C13-11AC-63B3-D64C-A95D14AFAE75" selected="true" versionid="BCF61330-2065-FF5D-A071-3617BCF9E555">QA_Test%20001</guidelineSet>
+        <guidelineSet nodeid="842FF852-0F31-E716-098B-30BBD80D6B9C" selected="false" versionid="A1BF7D48-207D-584C-89ED-78422870609A">Systemic%20Light%20Chain%20Amyloidosis</guidelineSet>
+        <guidelineSet nodeid="D5E506E8-B240-47F8-8644-A0F5FC1F8793" selected="false" versionid="B60FA5B9-325D-0A6B-1C62-6A5AB8EE1720">Waldenstr%C3%B6m%27s%20Macroglobulinemia%2FLymphoplasmacytic%20Lymphoma</guidelineSet>
+    </guidelineSets>
+    <node label="QA%20001" type="GUIDELINE" nodeid="6D1BD13E-AB49-BCCA-BB2C-185949D4E3D4" selected="true" version="0.2" seqnum="" year="2011" versionid="143DE533-2D2D-872D-F796-6780F643992E" >
+        <node label="New%20Algorithm" srcnodeid="4840DA13-81EE-A536-21F8-9437DA6D4535" type="GUIDELINE_SECTION" subtype="PATHWAY_SECTION" srcversid="97053378-8ED6-B62B-8111-F84528A21A08" nodeid="gls@220B819A-CE09-3AF9-C2C3-DE90595542B1" versionid="gls@2E27AB63-5E21-7BED-FFBF-2A040DDF2F2B" selected="false" version="2011.0.02" seqnum="">
+            <node label="001%20link" type="PHASE" nodeid="FDD55E9E-6FB7-B62A-AF2D-2A416881BF46" versionid="EF7438CB-7FB3-B6D3-8BF2-07711C4FDBFC" selected="false"/>
+        </node>
+    </node>
+</explorer>

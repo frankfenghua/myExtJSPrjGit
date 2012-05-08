@@ -17,7 +17,8 @@ Ext.define('MyApp.store.GUSXmlTreeStore', {
     extend: 'Ext.data.TreeStore',
     requires: [
         'MyApp.model.GUSXmlTreeModel',
-        'MyApp.overrides.CustomXmlReader'
+        'MyApp.overrides.CustomXmlReader',
+        'MyApp.overrides.CustomTreeStore'
     ],
 
     constructor: function(cfg) {
@@ -28,14 +29,15 @@ Ext.define('MyApp.store.GUSXmlTreeStore', {
             storeId: 'GUSXmlTreeStore',
             model: 'MyApp.model.GUSXmlTreeModel',
             root: {
-//                text: 'Guideline',
+                text: 'Explorer',
                 id: 'label',
                 expanded: true
             },
             proxy: {
                 type: 'ajax',
-                url: 'data/gus_org.xml',
+//                url: 'data/gus_org.xml',
 //                url: 'data/gus_full.xml',
+                url: 'data/gus_qa001.xml',
                 reader: {
                     type: 'xml',
                     root: 'explorer',
@@ -86,7 +88,12 @@ Ext.define('MyApp.store.GUSXmlTreeStore', {
             // node properties  to control how it appears in the TreePanel.
 
             // A user "item" shouldn't be expandable in the tree
-            newChildNode.set('leaf', true);
+
+//            if(newChildNode.childNodes.lengh > 0 ){
+//                newChildNode.set('leaf', false);
+//            }else{
+//                newChildNode.set('leaf', true);
+//            }
 
             // Use the model's "name" value as the text for each tree item
             newChildNode.set('text', newChildNode.get('label'));
