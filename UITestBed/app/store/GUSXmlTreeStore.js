@@ -41,6 +41,8 @@ Ext.define('MyApp.store.GUSXmlTreeStore', {
                 reader: {
                     type: 'xml',
                     root: 'explorer',
+                    //http://javaclaus.wordpress.com/2010/10/12/extjs-xml-and-the-dom/
+//                    record: 'node[@type="GUIDELINE"]'
                     record: 'node'
                 }
             },
