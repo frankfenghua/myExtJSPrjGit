@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<nodes>
+	<node>
+		<text>0data</text>
+		<id>src/data</id>
+		<cls>folder</cls>
+		<leaf/>
+	</node>
+	<node>
+		<text>1Layer.js</text>
+		<id>src/Layer.js</id>
+		<cls>file</cls>
+        <node>
+            <text>2Layer.js</text>
+            <id>src/2Layer.js</id>
+            <cls>file</cls>
+            <leaf>1</leaf>
+
+        </node>
+	</node>
+</nodes>

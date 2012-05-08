@@ -33,7 +33,8 @@ Ext.define('MyApp.store.NodesXmlTreeStore', {
             },
             proxy: {
                 type: 'ajax',
-                url: 'data/nodes.xml',
+//                url: 'data/nodes.xml',
+                url: 'data/nodes_simple.xml',
                 reader: {
                     type: 'xml',
                     root: 'nodes',
