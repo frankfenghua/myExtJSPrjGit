@@ -17,8 +17,9 @@ Ext.define('MyApp.store.GUSXmlTreeStore', {
     extend: 'Ext.data.TreeStore',
     requires: [
         'MyApp.model.GUSXmlTreeModel',
-        'MyApp.overrides.CustomXmlReader',
-        'MyApp.overrides.CustomTreeStore'
+        'MyApp.overrides.CustomXmlReader'
+//        ,
+//        'MyApp.overrides.CustomTreeStore'
     ],
 
     constructor: function(cfg) {

@@ -3,7 +3,11 @@
 //====================
 
 Ext.define('MyApp.overrides.CustomXmlReader',{
-    requires:'Ext.data.reader.Xml'
+    requires:[
+        'Ext.data.reader.Xml'
+        ,
+        'Ext.ux.xpath.Xpath'
+        ]
 },function(){
     Ext.override(Ext.data.reader.Xml, {
         extractData: function(root) {
@@ -16,7 +20,15 @@ Ext.define('MyApp.overrides.CustomXmlReader',{
             //</debug>
 
             if (recordName != root.nodeName) {
-                root = Ext.DomQuery.select(recordName, root);
+//                root = Ext.DomQuery.select(recordName, root);
+                if(false){//selector){
+//                    root = Ext.DomQuery.select(selector, root);
+                    root = Ext.DomQuery.select(recordName, root);
+                }else{
+//                    root = Ext.DomQuery.select(recordName, root);
+                    root = Ext.DomQuery.select( ('.//' + recordName), root);
+                }
+//                root =Xpath.xpath(selector ? selector : ('.//' + recordName), root);
                 //patch
 //                root = Ext.DomQuery.select('>' + recordName, root);
             } else {
@@ -27,4 +39,23 @@ Ext.define('MyApp.overrides.CustomXmlReader',{
     });
 });
 
+Ext.DomQuery.select =
+    function(path, root, type) {
+        root = root || document;
+        if (Ext.DomQuery.isXml(root)){
+            return root.xpath(path)
+        }
+        return Ext.DomQuery.jsSelect.call(this, path, root, type);
+    };
 
+//Ext.DomQuery.select = document.xpath ?
+//    function(path, root, type) {
+//        root = root || document;
+//        if (Ext.DomQuery.isXml(root)){
+//            return root.xpath(path)
+//        }
+//        return Ext.DomQuery.jsSelect.call(this, path, root, type);
+//    }
+//    : function(path, root, type) {
+//        return Ext.DomQuery.jsSelect.call(this, path, root, type)
+//    };
