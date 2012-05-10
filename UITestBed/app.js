@@ -19,7 +19,8 @@ Ext.Loader.setConfig({
     appFolder:'app',
 
     paths:{
-        'MyApp':'app'
+        'MyApp':'app',
+        'Ext.ux':'ux'
     }
 });
 
