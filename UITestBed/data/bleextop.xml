@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+<text>Applications</text>
+<expanded>true</expanded>
+<children>
+<text>Administration</text>
+<name>Administration</name>
+<application_k>1</application_k>
+<application_parent_k />
+<klass></klass>
+<description>Administration folder</description>
+<configurations>{&quot;iconCls&quot;:&quot;&quot;,&quot;width&quot;:800,&quot;height&quot;:480,&quot;shorcutIconCls&quot;:&quot;&quot;}</configurations>
+<active>1</active>
+<iconCls></iconCls>
+<leaf>false</leaf>
+<children>
+    <text>Applications</text>
+    <name>Applications</name>
+    <application_k>2</application_k>
+    <application_parent_k>1</application_parent_k>
+    <klass>Bleext.modules.catalogs.applications.controller.Application</klass>
+    <description>Applications catalog</description>
+    <configurations>{
+        &quot;iconCls&quot;:&quot;applications-icon&quot;
+        }</configurations>
+    <active>1</active>
+    <iconCls>applications-icon</iconCls>
+    <leaf>true</leaf>
+</children>
+<children>
+    <text>Roles</text>
+    <name>Roles</name>
+    <application_k>3</application_k>
+    <application_parent_k>1</application_parent_k>
+    <klass>Bleext.modules.catalogs.roles.controller.Roles</klass>
+    <description>Roles catalog</description>
+    <configurations>{&quot;iconCls&quot;:&quot;roles-icon&quot;,&quot;width&quot;:800,&quot;height&quot;:480,&quot;shorcutIconCls&quot;:&quot;&quot;}</configurations>
+    <active>1</active>
+    <iconCls>roles-icon</iconCls>
+    <leaf>true</leaf>
+</children>
+<children>
+    <text>Users</text>
+    <name>Users</name>
+    <application_k>4</application_k>
+    <application_parent_k>1</application_parent_k>
+    <klass>Bleext.modules.catalogs.users.controller.Users</klass>
+    <description>Users module</description>
+    <configurations>{&quot;iconCls&quot;:&quot;users-icon&quot;,&quot;shorcutIconCls&quot;:&quot;roles-app-shorcut-icon&quot;,&quot;width&quot;:800,&quot;height&quot;:480}</configurations>
+    <active>1</active>
+    <iconCls>users-icon</iconCls>
+    <leaf>true</leaf>
+</children>
+<children>
+    <text>Privileges</text>
+    <name>Privileges</name>
+    <application_k>6</application_k>
+    <application_parent_k>1</application_parent_k>
+    <klass>Bleext.modules.security.permissions.controller.Permission</klass>
+    <description>This module allow you to set the privileges to the roles and applications</description>
+    <configurations>{&quot;iconCls&quot;:&quot;permissions-icon-16&quot;,&quot;width&quot;:800,&quot;height&quot;:480,&quot;shorcutIconCls&quot;:&quot;&quot;}</configurations>
+    <active>1</active>
+    <iconCls>permissions-icon-16</iconCls>
+    <leaf>true</leaf>
+</children>
+<children>
+    <text>Groups</text>
+    <name>Groups</name>
+    <application_k>7</application_k>
+    <application_parent_k>1</application_parent_k>
+    <klass>Bleext.modules.security.groups.controller.Groups</klass>
+    <description>Groups module</description>
+    <configurations>{&quot;iconCls&quot;:&quot;groups-icon-16&quot;,&quot;width&quot;:800,&quot;height&quot;:480,&quot;shorcutIconCls&quot;:&quot;&quot;}</configurations>
+    <active>1</active>
+    <iconCls>groups-icon-16</iconCls>
+    <leaf>true</leaf>
+</children>
+</children>
+<success>true</success>
+</root>

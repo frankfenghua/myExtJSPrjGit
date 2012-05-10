@@ -21,9 +21,14 @@ Ext.define('MyApp.view.ExplorerTreePanel', {
     width: 150,
     title: 'Flat Tree Panel',
     collapseMode:'mini',
+    rootVisible	: false,
+    full		: true,
+
+//    store: 'BleextopXmlStore',
 
     initComponent: function() {
         var me = this;
+        me.store = Ext.create("MyApp.store.BleextopJsonStore");
 
         Ext.applyIf(me, {
             viewConfig: {

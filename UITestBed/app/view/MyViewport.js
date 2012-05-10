@@ -19,6 +19,8 @@ Ext.define('MyApp.view.MyViewport', {
         'MyApp.view.ExplorerTreePanel',
         'MyApp.view.GUSXmlTreePanel',
         'MyApp.view.UserGridPanel'
+//        ,
+//        'MyApp.store.BleextopXmlStore'
     ],
 
     autoScroll: false,
@@ -31,15 +33,16 @@ Ext.define('MyApp.view.MyViewport', {
 
         Ext.applyIf(me, {
             items: [
-//                {
-//                    xtype: 'explorertreepanel',
-//                    collapsible: true,
+                {
+                    xtype: 'explorertreepanel',
+                    collapsible: true,
+//                    store: 'BleextopXmlStore',
 //                    store: 'NodesXmlTreeStore',
-////                    store: 'MenuXmlTreeStore',
-////                    store: 'GUSJsonStore',
-//                    region: 'east',
-//                    split: true
-//                },
+//                    store: 'MenuXmlTreeStore',
+//                    store: 'GUSJsonStore',
+                    region: 'east',
+                    split: true
+                },
                 {
                     xtype: 'gusxmltreepanel',
                     collapsible: true,

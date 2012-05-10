@@ -27,12 +27,14 @@ Ext.Loader.setConfig({
 Ext.require([
 //    'MyApp.store.CarDataJson',
 //    'MyApp.store.XmlStore',
-    'MyApp.store.UserXmlTreeStore' ,
+//    'MyApp.store.UserXmlTreeStore' ,
+    'MyApp.store.BleextopJsonStore' ,
 //    'MyApp.store.UserJsonStore',
     'MyApp.store.GUSJsonStore',
 //    'MyApp.store.NodesXmlTreeStore',
 //    'MyApp.store.UserTreeStore',
-    'MyApp.store.GUSXmlTreeStore'
+    'MyApp.store.GUSXmlTreeStore',
+    'MyApp.store.BleextopJsonStore'
 //    'MyApp.store.MenuXmlTreeStore'
 ]);
 
@@ -42,6 +44,7 @@ Ext.onReady(function(){
 
 Ext.application({
     models: [
+        'BleextopJsonModel',
         'TreeModel',
         'CarDataModel',
         'UserModel',
@@ -65,8 +68,8 @@ Ext.application({
     views: [
         'MyViewport',
         'UserGridPanel',
-        'TreePanelTest',
-//        'ExplorerTreePanel',
+//        'TreePanelTest',
+        'ExplorerTreePanel',
         'GUSXmlTreePanel'
     ],
     autoCreateViewport: true,
