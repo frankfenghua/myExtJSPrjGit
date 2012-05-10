@@ -30,7 +30,7 @@ Ext.require([
     'MyApp.store.UserXmlTreeStore' ,
 //    'MyApp.store.UserJsonStore',
     'MyApp.store.GUSJsonStore',
-    'MyApp.store.NodesXmlTreeStore',
+//    'MyApp.store.NodesXmlTreeStore',
 //    'MyApp.store.UserTreeStore',
     'MyApp.store.GUSXmlTreeStore'
 //    'MyApp.store.MenuXmlTreeStore'
@@ -46,7 +46,7 @@ Ext.application({
         'CarDataModel',
         'UserModel',
         'MyUserModel',
-        'NodeXmlModel',
+//        'NodeXmlModel',
 //        'MenuXmlModel',
         'GUSXmlTreeModel',
         'MyGUSJsonModel'
@@ -54,9 +54,9 @@ Ext.application({
     stores: [
         'CarDataJson',
         'XmlStore',
-        'UserXmlTreeStore',
+//        'UserXmlTreeStore',
         'UserJsonStore',
-        'NodesXmlTreeStore',
+//        'NodesXmlTreeStore',
 //        'MenuXmlTreeStore',
         'UserTreeStore',
         'GUSXmlTreeStore',
@@ -66,7 +66,7 @@ Ext.application({
         'MyViewport',
         'UserGridPanel',
         'TreePanelTest',
-        'ExplorerTreePanel',
+//        'ExplorerTreePanel',
         'GUSXmlTreePanel'
     ],
     autoCreateViewport: true,

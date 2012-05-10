@@ -80,6 +80,7 @@ Ext.define('MyApp.store.GUSXmlTreeStore', {
     // to the tree, this TreeStore will fire an "append" event.
     // http://jsfiddle.net/QvaMG/195/
     onXmltreestoreAppend: function( thisNode, newChildNode, index, eOpts ) {
+        return;
 //        console.log("onXmltreestoreAppend()" + " :  treestore.data.label = " + treestore.data.label);
         // If the node that's being appended isn't a root node, then we can
         // assume it's one of our UserModel instances that's been "dressed
