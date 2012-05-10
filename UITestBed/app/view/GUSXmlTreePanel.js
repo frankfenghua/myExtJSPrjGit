@@ -42,10 +42,43 @@ Ext.define('MyApp.view.GUSXmlTreePanel', {
                     dataIndex: 'label',
                     flex: 1
                 }
-            ]
+            ],
+            listeners: {
+                beforeitemappend: {
+                    fn: me.onGusxmltreepanelBeforeItemAppend,
+                    scope: me
+                }
+            }
         });
 
-        me.callParent(arguments);
-    }
 
+        me.callParent(arguments);
+    },
+//    see http://wtcindia.wordpress.com/2012/04/09/how-to-use-ext-tree-panel-to-view-hierarchical-data-and-their-detail/
+    onGusxmltreepanelBeforeItemAppend: function(thisnode, newChildNode, eopts) {
+        if (thisnode == null || Ext.isEmpty(thisnode.data['Node_Nr'])
+            && newChildNode.get('Node_Parent') == 0) {
+
+            return true;
+        }
+
+        if ( thisnode ) {
+            var parent = thisnode.data['Node_Nr'];
+            var newChildNodeParent = newChildNode.get('Node_Parent');
+            var leaf1 = thisnode.data['BDO_Nr'];
+
+            if ( parent == newChildNodeParent && leaf1 == 0 ) {
+                return true;
+            } else {
+                if (leaf1 != 0 ) {
+                    thisnode.data.leaf = true; // non-zero value of BDO_Nr is an indication that the node is a leaf node.
+                }
+
+                return false;
+            }
+        } else {
+            return false;
+        }
+
+    }
 });
