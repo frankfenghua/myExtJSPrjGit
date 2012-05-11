@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+    <title>XML to JavaScript Object conversion example</title>
+    <script type="text/javascript">
+        /**
+         * a normal XMLHttpRequest function: it retrieves a file via XMLHTTPRequest, then calls the "callbackFnc" function when done.
+         **/
+        function XHR(sURL, callbackFnc /*, argumentToPass1, argumentToPass2, etc. */) {
+            var oResp, aArgs = Array.prototype.slice.call(arguments, 2);
+            if (window.XMLHttpRequest) { oResp = new XMLHttpRequest(); }
+            else if (window.ActiveXObject) { oResp = new ActiveXObject("Microsoft.XMLHTTP"); }
+            if (oResp) {
+                if (callbackFnc) {
+                    if (typeof oResp.onload !== "undefined")
+                        oResp.onload = function() {
+                            callbackFnc.apply(oResp, aArgs);
+                            oResp = null;
+                        };
+                    else {
+                        oResp.onreadystatechange = function() {
+                            if (oResp.readyState === 4) {
+                                callbackFnc.apply(oResp, aArgs);
+                                oResp = null;
+                            }
+                        };
+                    }
+                }
+                oResp.open("GET", sURL, true);
+                oResp.setRequestHeader("Content-Type", "text/plain");
+                oResp.setRequestHeader("If-Modified-Since", "Sat, 1 Jan 2000 00:00:00 GMT");
+                oResp.send(null);
+            }
+        }
+
+        /**
+         * the recursive function which converts an XML Document to a JavaScript Object;
+         * it will consider only the following node types and their attributes:
+         * - Document,
+         * - Element,
+         * - Text,
+         * - CDATASection;
+         * all other informations will be lost!
+         * it is a conscious choice.
+         * please, see http://www.w3schools.com/dom/dom_nodetype.asp
+         **/
+        function xml2Obj (oXMLNode) {
+            // default value for empty elements; it could be replaced with "null" instead of "true"... but i prefer so, because the truth is what appears :-)
+            var vResult = true;
+            // node attributes
+            if (oXMLNode.attributes && oXMLNode.attributes.length > 0) {
+                var iAttrib;
+                vResult = {};
+                vResult["@attributes"] = {};
+                for (var iAttrId = 0; iAttrId < oXMLNode.attributes.length; iAttrId++) {
+                    iAttrib = oXMLNode.attributes.item(iAttrId);
+                    vResult["@attributes"][iAttrib.nodeName] = iAttrib.nodeValue;
+                }
+            }
+            // children
+            if (oXMLNode.hasChildNodes()) {
+                var iKey, iValue, iXMLChild;
+                if (vResult === true) { vResult = {}; } // if above you have changed the default value, then it must be also replaced within this "if statement" in the same way...
+                for (var iChild = 0; iChild < oXMLNode.childNodes.length; iChild++) {
+                    iXMLChild = oXMLNode.childNodes.item(iChild);
+                    if ((iXMLChild.nodeType & 7) === 1) { // nodeType is "Document" (9) or "Element" (1)
+                        iKey = iXMLChild.nodeName;
+                        iValue = xml2Obj(iXMLChild);
+                        if (vResult.hasOwnProperty(iKey)) {
+                            if (vResult[iKey].constructor !== Array) { vResult[iKey] = [vResult[iKey]]; }
+                            vResult[iKey].push(iValue);
+                        } else { vResult[iKey] = iValue; }
+                    } else if ((iXMLChild.nodeType - 1 | 1) === 3) { // nodeType is "Text" (3) or "CDATASection" (4)
+                        iKey = "@content";
+                        iValue = iXMLChild.nodeType === 3 ? iXMLChild.nodeValue.replace(/^\s+|\s+$/g, "") : iXMLChild.nodeValue;
+                        if (vResult.hasOwnProperty(iKey)) { vResult[iKey] += iValue; }
+                        else if (iXMLChild.nodeType === 4 || iValue !== "") { vResult[iKey] = iValue; }
+                    }
+                }
+            }
+            return(vResult);
+        }
+
+        // function called via ajax callback
+        function myFunction() {
+            // converts the XML document got via XMLHttpRequest
+            var oMyObject = xml2Obj(this.responseXML);
+
+            // converts the resultant object to a string and displays it in a textarea
+            document.outputForm.outputBox.value = JSON.stringify(oMyObject);
+        }
+
+        var data = 'gus_qa001.xml';
+    </script>
+</head>
+
+<body>
+<h1>&ldquo;XML Document&rdquo; to &ldquo;JavaScript Object&rdquo; conversion example</h1>
+<form name="outputForm">
+    <p><textarea name="outputBox" style="width: 100%; height: 300px;"></textarea></p>
+    <p style="text-align: center"><input type="button" name="convertBtn" onclick="XHR(data, myFunction);" value="Click me!" style="font-size: 24px;" /></p>
+    <p>&hellip;I'll try to load the &ldquo;<a href="example.xml" title="Open the example XML file in a new tab." target="_blank">example.xml</a>&rdquo; file.</p>
+</form>
+</body>
+</html>
