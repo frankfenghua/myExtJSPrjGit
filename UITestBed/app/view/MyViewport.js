@@ -43,12 +43,35 @@ Ext.define('MyApp.view.MyViewport', {
                     region: 'east',
                     split: true
                 },
+
                 {
-                    xtype: 'gusxmltreepanel',
+                    xtype: 'panel',
+                    width: 150,
+                    layout: {
+                        align: 'stretch',
+                        type: 'vbox'
+                    },
+                    collapsed: false,
                     collapsible: true,
+
                     region: 'west',
-                    split: true
-                },
+                    hideCollapseTool: true,
+                    split: true,
+                    items: [
+                        {
+                            xtype: 'combobox',
+                            height: 20
+                        },
+                        {
+                            xtype: 'gusxmltreepanel',
+                            collapsible: true,
+                            region: 'west',
+                            flex: 1,
+                            split: true
+                        }
+                    ]
+                }
+                ,
                 {
                     xtype: 'panel',
                     height: 150,
