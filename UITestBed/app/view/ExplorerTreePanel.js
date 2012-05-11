@@ -30,6 +30,7 @@ Ext.define('MyApp.view.ExplorerTreePanel', {
         var me = this;
         me.store = Ext.create("MyApp.store.BleextopJsonStore");
 
+        me.store.addListener('load',me.onLoad);
         Ext.applyIf(me, {
             viewConfig: {
 
@@ -37,6 +38,11 @@ Ext.define('MyApp.view.ExplorerTreePanel', {
         });
 
         me.callParent(arguments);
-    }
+    },
 
+    onLoad:function( thisStore, node,records, successful, eOpts ){
+        if(node.isRoot()){
+            return;
+        }
+    }
 });

@@ -24,7 +24,22 @@
                     "configurations": "{\r\n   \"iconCls\":\"applications-icon\"\r\n}",
                     "active": "1",
                     "iconCls": "applications-icon",
-                    "leaf": true
+                    "leaf": false,
+                    "children":[
+                        {
+                            "text": "Applications2",
+                            "name": "Applications2",
+                            "application_k": "22",
+                            "application_parent_k": "12",
+                            "klass": "Bleext.modules.catalogs.applications.controller.Application2",
+                            "description": "Applications catalog2",
+                            "configurations": "{\r\n   \"iconCls\":\"applications-icon\"\r\n}",
+                            "active": "12",
+                            "iconCls": "applications-icon",
+                            "leaf": true
+
+                        }
+                    ]
                 },
                 {
                     "text": "Roles",
