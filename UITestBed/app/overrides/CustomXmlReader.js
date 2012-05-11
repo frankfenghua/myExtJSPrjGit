@@ -35,7 +35,13 @@ Ext.define('MyApp.overrides.CustomXmlReader',{
                 root = [root];
             }
             return this.callParent([root]);
+        },
+        readRecords: function(doc) {
+            this.xmlData = doc;
+
+            return this.callParent([doc]);
         }
+
     });
 });
 
