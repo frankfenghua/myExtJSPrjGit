@@ -35,7 +35,27 @@ Ext.define('MyApp.overrides.CustomXmlReader',{
                 root = [root];
             }
             return this.callParent([root]);
+        },
+        readRecords: function(doc) {
+            this.xmlData = doc;
+
+            return this.callParent([doc]);
+        },
+        getRoot: function(data) {
+            // http://www.sencha.com/forum/showthread.php?154911
+            var nodeName = data.nodeName,
+                root     = this.root;
+
+            if (!root || (nodeName && nodeName == root)) {
+                return data;
+            } else {
+                // This fix ensures we have XML data
+                // Related to TreeStore calling getRoot with the root node, which isn't XML
+                // Probably should be resolved in TreeStore at some point
+                return Ext.DomQuery.selectNode(root, data);
+            }
         }
+
     });
 });
 
