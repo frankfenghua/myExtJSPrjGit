@@ -69,7 +69,8 @@ If you are unsure which license is appropriate for your use, please contact the 
 
     /* document.write('<script type="text/javascript" src="' + path + 'ext-all' + ((isDevelopment) ? '-debug' : '') + '.js"></script>'); */
 	if(isDevelopment){
-		document.write('<script type="text/javascript" src="' + path + 'ext' + ((isDevelopment) ? '-debug' : '') + '.js"></script>');
+//		document.write('<script type="text/javascript" src="' + path + 'ext' + ((isDevelopment) ? '-debug' : '') + '.js"></script>');
+		document.write('<script type="text/javascript" src="' + path + 'ext' + ((isDevelopment) ? '-dev' : '') + '.js"></script>');
 	}else{
 		document.write('<script type="text/javascript" src="' + path + 'ext-all' + ((!isDevelopment) ? '-dev' : '') + '.js"></script>');
 	}

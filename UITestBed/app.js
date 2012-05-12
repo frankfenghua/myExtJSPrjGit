@@ -20,7 +20,8 @@ Ext.Loader.setConfig({
 
     paths:{
         'MyApp':'app',
-        'Ext.ux':'ux'
+        'Ext.ux':'ux',
+        'Ext':'ext/src'    //ext is symbol link to extjs-4.0.7-gpl/src
     }
 });
 
