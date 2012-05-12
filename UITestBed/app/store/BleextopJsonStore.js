@@ -38,8 +38,17 @@ Ext.define('MyApp.store.BleextopJsonStore', {
 //                     text:'test',
 //                    expanded:true
 //                }
+            },
+            listeners:{
+                load:{
+                    fn:me.onLoad,
+                    scope:me
+                }
             }
         }, cfg)]);
 
+    },
+    onLoad:function(thisNode,node,records,successful,eOpts){
+        console.log("onXmltreestoreLoad");
     }
 });
