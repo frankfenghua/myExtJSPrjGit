@@ -94,7 +94,8 @@ Ext.define('MyApp.store.GUSXmlTreeStore', {
     },
 
     initXmlTree:function(){
-        var url = 'http://localhost/js/myExtJSPrjGit/UITestBed/data/gus_qa001.xml' ;
+//        var url = 'http://localhost/js/myExtJSPrjGit/UITestBed/data/gus_qa001.xml' ;
+        var url = 'data/gus_qa001.xml' ;
         var xml = new JKL.ParseXML( url, null );
 
         var gjsonData = xml.parse();
