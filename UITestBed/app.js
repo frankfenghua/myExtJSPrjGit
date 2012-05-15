@@ -39,9 +39,9 @@ Ext.require([
 //    'MyApp.store.MenuXmlTreeStore'
 ]);
 
-Ext.onReady(function(){
-    console.log('ready');
-});
+//Ext.onReady(function(){
+//    console.log('ready');
+//});
 
 Ext.application({
     models: [
@@ -81,4 +81,9 @@ Ext.application({
 //        'JsonUserController',
         'GUSXmlTreepanelController'
     ]
+//    ,
+//    launch: function() {
+//        Ext.create('MyApp.view.MyViewport', {
+//        });
+//    }
 });

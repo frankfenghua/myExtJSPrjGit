@@ -33,16 +33,16 @@ Ext.define('MyApp.view.MyViewport', {
 
         Ext.applyIf(me, {
             items: [
-                {
-                    xtype: 'explorertreepanel',
-                    collapsible: true,
-//                    store: 'BleextopXmlStore',
-//                    store: 'NodesXmlTreeStore',
-//                    store: 'MenuXmlTreeStore',
-//                    store: 'GUSJsonStore',
-                    region: 'east',
-                    split: true
-                },
+//                {
+//                    xtype: 'explorertreepanel',
+//                    collapsible: true,
+////                    store: 'BleextopXmlStore',
+////                    store: 'NodesXmlTreeStore',
+////                    store: 'MenuXmlTreeStore',
+////                    store: 'GUSJsonStore',
+//                    region: 'east',
+//                    split: true
+//                },
 
                 {
                     xtype: 'panel',

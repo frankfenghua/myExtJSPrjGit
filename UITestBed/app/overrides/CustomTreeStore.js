@@ -12,55 +12,80 @@ Ext.define('MyApp.overrides.CustomTreeStore',{
          * @param {Ext.data.NodeInterface} node The node to fill
          * @param {Ext.data.Model[]} records The records to add
          */
-        fillNode: function(node, records) {
+        fillNode: function(node, newNodes) {
             var me = this,
-                ln = records ? records.length : 0,
-                raw,
-                i = 0, sortCollection;
+                ln = newNodes ? newNodes.length : 0,
+                sorters = me.sorters,
+                i, sortCollection,
+                needsIndexSort = false,
+                performLocalSort = ln && me.sortOnLoad && !me.remoteSort && sorters && sorters.items && sorters.items.length,
+                node1, node2;
 
-            if (ln && me.sortOnLoad && !me.remoteSort && me.sorters && me.sorters.items) {
-                sortCollection = Ext.create('Ext.util.MixedCollection');
-                sortCollection.addAll(records);
+            // See if there are any differing index values in the new nodes. If not, then we do not have to sortByIndex
+            for (i = 1; i < ln; i++) {
+                node1 = newNodes[i];
+                node2 = newNodes[i - 1];
+                needsIndexSort = node1[node1.persistenceProperty].index != node2[node2.persistenceProperty].index;
+                if (needsIndexSort) {
+                    break;
+                }
+            }
+
+            // If there is a set of local sorters defined.
+            if (performLocalSort) {
+                // If sorting by index is needed, sort by index first
+                if (needsIndexSort) {
+                    me.sorters.insert(0, me.indexSorter);
+                }
+                sortCollection = new Ext.util.MixedCollection();
+                sortCollection.addAll(newNodes);
                 sortCollection.sort(me.sorters.items);
-                records = sortCollection.items;
+                newNodes = sortCollection.items;
+
+                // Remove the index sorter
+                me.sorters.remove(me.indexSorter);
+            } else if (needsIndexSort) {
+                Ext.Array.sort(newNodes, me.sortByIndex);
             }
 
             node.set('loaded', true);
-            for (; i < ln; i++) {
-                //me
-                raw = records[i].raw;
-//                console.log("CustomTreeStore::fillNode() raw = " + raw); // returned xml rather than object
-                console.log( raw); // returned xml rather than object
-//                if(raw.childNodes.lengh > 0 ){
-//                    newChildNode.set('leaf', false);
-//                }else{
-//                    newChildNode.set('leaf', true);
-//                }
-//                records[i].data.leaf = raw.leaf; // so this fails probably
-
-                node.appendChild(records[i], undefined, true);
-            }
-
-            return records;
-//            return this.callParent(arguments);
-        },
-        onNodeAdded: function(parent, node) {
-            var proxy = this.getProxy(),
-                reader = proxy.getReader(),
-                data = node.raw || node.data,
-                dataRoot, children;
-
-            Ext.Array.remove(this.removed, node);
-            node.set('leaf', true);
-
-            if (!node.isLeaf() && !node.isLoaded()) {
-                dataRoot = reader.getRoot(data);
-                if (dataRoot) {
-                    this.fillNode(node, reader.extractData(dataRoot));
-                    delete data[reader.root];
+            for (i = 0; i < ln; i++) {
+                if(!node.isRoot()){
+                    if(node.raw.node){
+                        node.appendChild(newNodes[i], undefined, true);
+                        if( !newNodes[i].raw.node ){
+                            newNodes[i].set('leaf',true);
+                        }
+                    }else{
+                        node.set('leaf',true);
+                    }
+                }else{
+                    node.appendChild(newNodes[i], undefined, true);
                 }
             }
+
+            return newNodes;
         }
+        /*/
+         ,
+         onNodeAdded: function(parent, node) {
+         var proxy = this.getProxy(),
+         reader = proxy.getReader(),
+         data = node.raw || node.data,
+         dataRoot, children;
+
+         Ext.Array.remove(this.removed, node);
+         node.set('leaf', true);
+
+         if (!node.isLeaf() && !node.isLoaded()) {
+         dataRoot = reader.getRoot(data);
+         if (dataRoot) {
+         this.fillNode(node, reader.extractData(dataRoot));
+         delete data[reader.root];
+         }
+         }
+         }
+         //*/
     });
 });
 

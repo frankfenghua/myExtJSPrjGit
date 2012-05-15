@@ -56,6 +56,7 @@ Ext.define('MyApp.view.GUSXmlTreePanel', {
     },
 //    see http://wtcindia.wordpress.com/2012/04/09/how-to-use-ext-tree-panel-to-view-hierarchical-data-and-their-detail/
     onGusxmltreepanelBeforeItemAppend: function(thisnode, newChildNode, eopts) {
+/*/
         if (thisnode == null || Ext.isEmpty(thisnode.data['Node_Nr'])
             && newChildNode.get('Node_Parent') == 0) {
 
@@ -79,6 +80,6 @@ Ext.define('MyApp.view.GUSXmlTreePanel', {
         } else {
             return false;
         }
-
+//*/
     }
 });

@@ -16,35 +16,58 @@
 Ext.define('MyApp.store.GUSXmlTreeStore', {
     extend: 'Ext.data.TreeStore',
     requires: [
-        'MyApp.model.GUSXmlTreeModel',
-        'MyApp.overrides.CustomXmlReader'
+        'MyApp.model.GUSJsonTreeModel'
 //        ,
-//        'MyApp.overrides.CustomTreeStore'
+//        'MyApp.overrides.CustomJsonReader'
+        ,
+        'MyApp.overrides.CustomTreeStore'
     ],
+
+//    config: {
+//        gjsonData: function(){
+//            var url = 'http://localhost/js/myExtJSPrjGit/UITestBed/data/gus_qa001.xml' ;
+//            var xml = new JKL.ParseXML( url, null );
+//
+//            var gjsonData = xml.parse();
+//            return   gjsonData;
+//        }
+//    },
 
     constructor: function(cfg) {
         var me = this;
+
+
+        me.gjsonData = me.initXmlTree();
+//        me.initConfig(cfg);
+
         cfg = cfg || {};
         me.callParent([Ext.apply({
-            autoLoad: false,
+
+            autoLoad: true,
             storeId: 'GUSXmlTreeStore',
-            model: 'MyApp.model.GUSXmlTreeModel',
+            model: 'MyApp.model.GUSJsonTreeModel',
             root: {
-                text: 'Explorer',
-                id: 'label',
+                name: 'People',
+                label: 'People',
+                nodeid: 'root_nodeid',
                 expanded: true
-            },
+            } ,
             proxy: {
-                type: 'ajax',
+//                type: 'ajax',
 //                url: 'data/gus_org.xml',
 //                url: 'data/gus_full.xml',
-                url: 'data/gus_qa001.xml',
+//                url: 'data/gus_qa001.xml',
+                type: 'memory',
+                data: me.gjsonData,
                 reader: {
-                    type: 'xml',
-                    root: 'explorer',
-                    //http://javaclaus.wordpress.com/2010/10/12/extjs-xml-and-the-dom/
-//                    record: 'node[@type="GUIDELINE"]'
-                    record: 'node'
+                    type: 'json',
+                    root: function(o) {
+                        if (o.explorer) { //root
+                            return o.explorer.node;     // for treegrid_nested_json2.json
+                        } else {
+                            return o.node; // for    treegrid_nested_json.json
+                        }
+                    }
                 }
             },
             listeners:{
@@ -66,6 +89,16 @@ Ext.define('MyApp.store.GUSXmlTreeStore', {
                 }
             }
         }, cfg)]);
+
+
+    },
+
+    initXmlTree:function(){
+        var url = 'http://localhost/js/myExtJSPrjGit/UITestBed/data/gus_qa001.xml' ;
+        var xml = new JKL.ParseXML( url, null );
+
+        var gjsonData = xml.parse();
+        return   gjsonData;
     },
 
     onXmltreestoreBeforeExpand: function(treestore, options) {
@@ -80,34 +113,6 @@ Ext.define('MyApp.store.GUSXmlTreeStore', {
     // to the tree, this TreeStore will fire an "append" event.
     // http://jsfiddle.net/QvaMG/195/
     onXmltreestoreAppend: function( thisNode, newChildNode, index, eOpts ) {
-        return;
-//        console.log("onXmltreestoreAppend()" + " :  treestore.data.label = " + treestore.data.label);
-        // If the node that's being appended isn't a root node, then we can
-        // assume it's one of our UserModel instances that's been "dressed
-        // up" as a node
-        if( !newChildNode.isRoot() ) {
-
-            // The node is a UserModel instance with NodeInterface
-            // properties and methods added. We want to customize those
-            // node properties  to control how it appears in the TreePanel.
-
-            // A user "item" shouldn't be expandable in the tree
-
-//            if(newChildNode.childNodes.lengh > 0 ){
-//                newChildNode.set('leaf', false);
-//            }else{
-//                newChildNode.set('leaf', true);
-//            }
-
-            // Use the model's "name" value as the text for each tree item
-            newChildNode.set('text', newChildNode.get('label'));
-
-            // Use the model's profile url as the icon for each tree item
-//            newChildNode.set('icon', newChildNode.get('profile_image_url'));
-//            newChildNode.set('cls', 'demo-userNode');
-//            newChildNode.set('iconCls', 'demo-userNodeIcon');
-        }
-
     },
     onXmltreestoreLoad:function(thisNode,node,records,successful,eOpts){
         console.log("onXmltreestoreLoad");
