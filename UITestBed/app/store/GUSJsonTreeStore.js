@@ -17,10 +17,10 @@ Ext.define('MyApp.store.GUSJsonTreeStore', {
     extend: 'Ext.data.TreeStore',
     requires: [
         'MyApp.model.GUSJsonTreeModel'
-//        ,
-//        'MyApp.overrides.CustomJsonReader'
         ,
-        'MyApp.overrides.CustomTreeStore'
+        'MyApp.data.reader.MyJsonReader'
+        ,
+        'MyApp.data.MyTreeStore'
     ],
 
 //    config: {
