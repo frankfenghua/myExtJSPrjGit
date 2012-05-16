@@ -46,10 +46,10 @@ Ext.require([
 Ext.application({
     models: [
         'BleextopJsonModel',
-        'TreeModel',
-        'CarDataModel',
+//        'TreeModel',
+//        'CarDataModel',
         'UserModel',
-        'MyUserModel',
+//        'MyUserModel',
 //        'NodeXmlModel',
 //        'MenuXmlModel',
 //        'GUSXmlTreeModel',
@@ -57,7 +57,7 @@ Ext.application({
         'MyGUSJsonModel'
     ],
     stores: [
-        'CarDataJson',
+//        'CarDataJson',
         'XmlStore',
 //        'UserXmlTreeStore',
         'UserJsonStore',

@@ -18,6 +18,7 @@ Ext.define('MyApp.view.MyViewport', {
     requires: [
         'MyApp.view.ExplorerTreePanel',
         'MyApp.view.GUSJsonTreePanel',
+        'MyApp.store.GUSJsonTreeStore',
         'MyApp.view.UserGridPanel'
 //        ,
 //        'MyApp.store.BleextopXmlStore'

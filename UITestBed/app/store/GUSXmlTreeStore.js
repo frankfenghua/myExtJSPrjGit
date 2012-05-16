@@ -19,8 +19,8 @@ Ext.define('MyApp.store.GUSXmlTreeStore', {
         'MyApp.model.GUSJsonTreeModel'
 //        ,
 //        'MyApp.overrides.CustomJsonReader'
-        ,
-        'MyApp.overrides.CustomTreeStore'
+//        ,
+//        'MyApp.overrides.CustomTreeStore' // not good, coz enable this will trigger global TreeStore override
     ],
 
 //    config: {

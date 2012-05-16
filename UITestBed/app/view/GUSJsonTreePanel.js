@@ -16,7 +16,6 @@
 Ext.define('MyApp.view.GUSJsonTreePanel', {
     extend: 'Ext.tree.Panel',
     alias: 'widget.gusjsontreepanel',
-
     id: 'gusjsontreepanel',
     width: 150,
     title: 'GUS Json Tree Panel',
@@ -27,6 +26,7 @@ Ext.define('MyApp.view.GUSJsonTreePanel', {
 
     initComponent: function() {
         var me = this;
+//        me.store = Ext.create("MyApp.store.GUSJsonTreeStore");
 
         Ext.applyIf(me, {
             viewConfig: {
