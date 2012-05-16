@@ -52,7 +52,8 @@ Ext.application({
         'MyUserModel',
 //        'NodeXmlModel',
 //        'MenuXmlModel',
-        'GUSXmlTreeModel',
+//        'GUSXmlTreeModel',
+        'GUSJsonTreeModel',
         'MyGUSJsonModel'
     ],
     stores: [
@@ -63,7 +64,8 @@ Ext.application({
 //        'NodesXmlTreeStore',
 //        'MenuXmlTreeStore',
         'UserTreeStore',
-        'GUSXmlTreeStore',
+//        'GUSXmlTreeStore',
+        'GUSJsonTreeStore',
         'GUSJsonStore'
     ],
     views: [
@@ -71,7 +73,8 @@ Ext.application({
         'UserGridPanel',
 //        'TreePanelTest',
         'ExplorerTreePanel',
-        'GUSXmlTreePanel'
+//        'GUSXmlTreePanel'   ,
+        'GUSJsonTreePanel'
     ],
     autoCreateViewport: true,
     name: 'MyApp',
@@ -79,7 +82,8 @@ Ext.application({
         'ExplorerController',
         'UserGridController',
 //        'JsonUserController',
-        'GUSXmlTreepanelController'
+//        'GUSXmlTreepanelController',
+        'GUSJsonTreepanelController'
     ]
 //    ,
 //    launch: function() {

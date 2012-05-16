@@ -17,7 +17,7 @@ Ext.define('MyApp.view.MyViewport', {
     extend: 'Ext.container.Viewport',
     requires: [
         'MyApp.view.ExplorerTreePanel',
-        'MyApp.view.GUSXmlTreePanel',
+        'MyApp.view.GUSJsonTreePanel',
         'MyApp.view.UserGridPanel'
 //        ,
 //        'MyApp.store.BleextopXmlStore'
@@ -33,16 +33,16 @@ Ext.define('MyApp.view.MyViewport', {
 
         Ext.applyIf(me, {
             items: [
-//                {
-//                    xtype: 'explorertreepanel',
-//                    collapsible: true,
-////                    store: 'BleextopXmlStore',
-////                    store: 'NodesXmlTreeStore',
-////                    store: 'MenuXmlTreeStore',
-////                    store: 'GUSJsonStore',
-//                    region: 'east',
-//                    split: true
-//                },
+                {
+                    xtype: 'explorertreepanel',
+                    collapsible: true,
+//                    store: 'BleextopXmlStore',
+//                    store: 'NodesXmlTreeStore',
+//                    store: 'MenuXmlTreeStore',
+//                    store: 'GUSJsonStore',
+                    region: 'east',
+                    split: true
+                },
 
                 {
                     xtype: 'panel',
@@ -63,7 +63,7 @@ Ext.define('MyApp.view.MyViewport', {
                             height: 20
                         },
                         {
-                            xtype: 'gusxmltreepanel',
+                            xtype: 'gusjsontreepanel',
                             collapsible: true,
                             region: 'west',
                             flex: 1,
