@@ -35,7 +35,8 @@ Ext.require([
 //    'MyApp.store.NodesXmlTreeStore',
 //    'MyApp.store.UserTreeStore',
     'MyApp.store.GUSXmlTreeStore',
-    'MyApp.store.BleextopJsonStore'
+    'MyApp.store.BleextopJsonStore'      ,
+    'MyApp.store.GUSJsonComboStore'
 //    'MyApp.store.MenuXmlTreeStore'
 ]);
 
@@ -66,7 +67,8 @@ Ext.application({
         'UserTreeStore',
 //        'GUSXmlTreeStore',
         'GUSJsonTreeStore',
-        'GUSJsonStore'
+        'GUSJsonStore'  ,
+        'GUSJsonComboStore'
     ],
     views: [
         'MyViewport',
@@ -74,7 +76,8 @@ Ext.application({
 //        'TreePanelTest',
         'ExplorerTreePanel',
 //        'GUSXmlTreePanel'   ,
-        'GUSJsonTreePanel'
+        'GUSJsonTreePanel',
+        'GUSJsonComboBox'
     ],
     autoCreateViewport: true,
     name: 'MyApp',

@@ -19,7 +19,8 @@ Ext.define('MyApp.view.MyViewport', {
         'MyApp.view.ExplorerTreePanel',
         'MyApp.view.GUSJsonTreePanel',
         'MyApp.store.GUSJsonTreeStore',
-        'MyApp.view.UserGridPanel'
+        'MyApp.view.UserGridPanel'       ,
+        'MyApp.view.GUSJsonComboBox'
 //        ,
 //        'MyApp.store.BleextopXmlStore'
     ],
@@ -34,6 +35,7 @@ Ext.define('MyApp.view.MyViewport', {
 
         Ext.applyIf(me, {
             items: [
+/*
                 {
                     xtype: 'explorertreepanel',
                     collapsible: true,
@@ -44,7 +46,7 @@ Ext.define('MyApp.view.MyViewport', {
                     region: 'east',
                     split: true
                 },
-
+*/
                 {
                     xtype: 'panel',
                     width: 150,
@@ -60,7 +62,7 @@ Ext.define('MyApp.view.MyViewport', {
                     split: true,
                     items: [
                         {
-                            xtype: 'combobox',
+                            xtype: 'gusjsoncombobox',
                             height: 20
                         },
                         {

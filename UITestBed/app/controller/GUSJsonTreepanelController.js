@@ -28,8 +28,14 @@ Ext.define('MyApp.controller.GUSJsonTreepanelController', {
         {
             ref: 'ExplorerTreePanel',
             selector: '#explorertreepanel'
+        },
+        {
+            ref: 'GUSJsonComboBox',
+            selector: '#gusjsoncombobox'
         }
     ],
+
+    stores:['GUSJsonComboStore'],
 
     onTreepanelSelectionChange: function(tablepanel, selections, options) {
         if(selections[0] && selections[0].data ){
@@ -53,6 +59,21 @@ Ext.define('MyApp.controller.GUSJsonTreepanelController', {
         });
 
     },
+    // A template method like init, but called after the viewport is created.
+    // This is called after the launch method of Application is executed.
+    onLaunch: function() {
+        var gusjsonComboStore = this.getGUSJsonComboStoreStore();
+        gusjsonComboStore.load({
+            callback: this.onGusJsonComboBoxLoad,
+            scope: this
+        });
+    },
+    onGusJsonComboBoxLoad: function() {
+        var gusJsonTreePanel = this.getGUSJsonTreePanel();
+//        gusJsonTreePanel.getSelectionModel().select(0);
+    },
+
+
     /**
      * Excellent function that converts tree data into json
      */
