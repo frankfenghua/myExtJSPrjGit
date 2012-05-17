@@ -9,7 +9,8 @@ Ext.define('MyApp.view.GUSJsonComboBox', {
 //    store: this.createStore(),
 //    displayField: 'label',
 //    displayField: 'name',
-    displayField: 'guidelineSet',
+//    displayField: 'guidelineSet',
+    displayField: '#text',     //coz covert from xml to json using JKL.ParseXML
     typeAhead: true,
     queryMode: 'local',
     valueField: 'id',

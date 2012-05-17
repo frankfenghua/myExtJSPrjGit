@@ -1,5 +1,6 @@
 Ext.define('MyApp.store.GUSJsonComboStore', {
     extend: 'Ext.data.Store',
+//    extend: 'Ext.data.TreeStore',
     requires: [
         'MyApp.model.GUSJsonComboModel'
     ],
@@ -20,12 +21,18 @@ Ext.define('MyApp.store.GUSJsonComboStore', {
             storeId: 'GUSJsonComboStore',
             model: 'MyApp.model.GUSJsonComboModel',
             proxy: {
-                type: 'ajax',
-                url: 'data/gus_qa001.xml',
+                type:'memory',
+                data:me.gjsonData,
+
                 reader: {
-                    type: 'xml',
-                    root: 'explorer',
-                    record:'guidelineSets'
+                    type: 'json',
+                    root: function(o) {
+                        if (o.explorer) { //root
+                            return o.explorer.guidelineSets.guidelineSet;     // for treegrid_nested_json2.json
+                        } else {
+                            return o.node; // for    treegrid_nested_json.json
+                        }
+                    }
                 }
             }
         }, cfg)]);
