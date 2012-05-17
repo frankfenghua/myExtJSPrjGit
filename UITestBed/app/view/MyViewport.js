@@ -49,7 +49,7 @@ Ext.define('MyApp.view.MyViewport', {
 */
                 {
                     xtype: 'panel',
-                    width: 150,
+                    width: 200,
                     layout: {
                         align: 'stretch',
                         type: 'vbox'
